@@ -1,0 +1,787 @@
+Name,Amount,Measure,Cost,Seller,Date,Buyer,Category,Type
+Chocolate Bar,7,oz,2.79,Hannaford,11May2015,MM,Grocery,Snack
+Chocolate Bar,7,oz,2.79,Hannaford,11May2015,MM,Grocery,Snack
+Gasoline,12.58,gal,33.32,Circle K 455 KMD Waterville,09May2015,MM,Gas,Subaru
+Peanut Butter,4.28,lbs,9.98,Uncle Dean's,09May2015,MM,Grocery,Nut Butter
+Food Bar,1,bar,1.99,Uncle Dean's,05May2015,MM,Grocery,Snack
+Chocolate Bar,3,oz,1.99,Uncle Dean's,05May2015,MM,Grocery,Snack
+Granny Smith Apple,0.38,lbs,1.14,Uncle Dean's,05May2015,MM,Grocery,Fruit
+Udi's Hot Dog Buns,14.3,oz,5.49,Hannaford,20May2015,TP,Grocery,Bread
+Annie GF Shells White Cheddar,6,oz,2.69,Hannaford,20May2015,TP,Grocery,Snack
+Goya Black Beans,15.5,oz,0.99,Hannaford,20May2015,TP,Grocery,Beans
+Goya Black Beans,15.5,oz,0.99,Hannaford,20May2015,TP,Grocery,Beans
+Wild Albacore Tuna,4.1,oz,3.29,Hannaford,20May2015,TP,Grocery,Canned Food
+Wild Albacore Tuna,4.1,oz,3.29,Hannaford,20May2015,TP,Grocery,Canned Food
+Bananas,1.26,lbs,0.62,Hannaford,20May2015,TP,Grocery,Fruit
+Baby Bella Mushrooms,10,oz,2.69,Hannaford,20May2015,TP,Grocery,Mushroom
+Organic Carrots,2,lbs,2.99,Hannaford,20May2015,TP,Grocery,Vegetable
+Coconut Cream,14,floz,1.49,Trader Joe's,13Jun2015,TP,Grocery,Fruit
+Frozen French Green Beans,24,oz,1.99,Trader Joe's,13Jun2015,TP,Grocery,Vegetable
+Canola Oil,32,floz,2.49,Trader Joe's,13Jun2015,TP,Grocery,Oil
+Sweet Potatoes,2,lbs,1.69,Trader Joe's,13Jun2015,TP,Grocery,Vegetable
+Coconut Cream,14,floz,1.49,Trader Joe's,13Jun2015,TP,Grocery,Fruit
+Frozen Edamame Soy Beans,12,oz,1.79,Trader Joe's,13Jun2015,TP,Grocery,Vegetable
+Chipotle Salsa,16,oz,1.99,Trader Joe's,13Jun2015,TP,Grocery,Condiment
+Organic Sugar,32,oz,3.49,Trader Joe's,13Jun2015,TP,Grocery,Sweetener
+Malbec Wine,750,ml,4.49,Trader Joe's,13Jun2015,TP,Grocery,Alcohol
+Cookies,14.11,oz,2.49,Trader Joe's,13Jun2015,TP,Grocery,Snack
+Pepperoni,6,oz,3.29,Trader Joe's,13Jun2015,TP,Grocery,Meat
+Bacon Ends and Pieces,1,lbs,3.49,Trader Joe's,13Jun2015,TP,Grocery,Meat
+Bacon Ends and Pieces,1,lbs,3.49,Trader Joe's,13Jun2015,TP,Grocery,Meat
+Cremini Baby Bella Mushrooms,10,oz,1.99,Trader Joe's,13Jun2015,TP,Grocery,Mushroom
+Montepulciano D'Abruzzo Wine,750,ml,5.99,Trader Joe's,13Jun2015,TP,Grocery,Alcohol
+Bananas,6,items,1.14,Trader Joe's,13Jun2015,TP,Grocery,Fruit
+Extra Firm Tofu,14,oz,1.99,Whole Foods,13Jun2015,TP,Grocery,Tofu
+Organic Tofu,14,oz,1.99,Whole Foods,13Jun2015,TP,Grocery,Tofu
+Organic Tempeh,8,oz,2.5,Whole Foods,13Jun2015,TP,Grocery,Tofu
+Flax Tempeh,8,oz,2.5,Whole Foods,13Jun2015,TP,Grocery,Tofu
+Lime Juice,16,floz,4.69,Whole Foods,13Jun2015,TP,Grocery,Juice
+Organic Carrots,5,lbs,4.99,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Yellow Potatoes,2.36,lbs,3.52,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Squash Zucchini,2.59,lbs,3.86,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Red Radishes,1,bunch,1.99,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Greens Rainbow Chard,0.65,lbs,1.94,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Greens Red kale,1.12,lbs,3.35,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Vanilla Snackimals,2.125,oz,1.19,Whole Foods,13Jun2015,TP,Grocery,Snack
+Pork Sausage,0.7,lbs,4.89,Whole Foods,13Jun2015,TP,Grocery,Meat
+Greens Bok Choy,0.72,lbs,1.07,Whole Foods,13Jun2015,TP,Grocery,Vegetable
+Daniele Pepperoni,3,oz,2.89,Hannaford,22May2015,TP,Grocery,Meat
+Port Pie GF Dough,16,oz,2.59,Hannaford,22May2015,TP,Grocery,Bread
+Port Pie Multigrain Dough,20,oz,2.39,Hannaford,22May2015,TP,Grocery,Bread
+Dark Chocolate Bar,7,oz,2.89,Hannaford,22May2015,TP,Grocery,Snack
+Goya Maria Cookies,7,oz,0.89,Hannaford,22May2015,TP,Grocery,Snack
+Goya Palmerita Cookies,5.82,oz,0.89,Hannaford,22May2015,TP,Grocery,Snack
+Tuttorosso Tomato Sauce,28,oz,1.59,Hannaford,22May2015,TP,Grocery,Canned Vegetable
+Oakhurst Almondmilk,0.5,gal,3.49,Hannaford,22May2015,TP,Grocery,Milk
+Late July Sublime Tortilla Chips,5.6,oz,2.99,Hannaford,22May2015,TP,Grocery,Snack
+Orange Peppers,0.59,lbs,1.59,Hannaford,22May2015,TP,Grocery,Vegetable
+Red Potatoes,1.91,lbs,1.32,Hannaford,22May2015,TP,Grocery,Vegetable
+Sweet Potatoes,2.43,lbs,1.68,Hannaford,22May2015,TP,Grocery,Vegetable
+Red Holland Peppers,0.48,lbs,1.29,Hannaford,22May2015,TP,Grocery,Vegetable
+Gasoline,13.279,gal,36.5,574 Rt 1 Freeport ME,13Jun2015,MM,Gas,Subaru
+Lunch,1,meal,7,Foss Dining Hall Colby College,17Mar2015,TP,Dining,Lunch
+Gasoline,9.03,gal,25.27,OnTheRun 94 Pleasant St Waterville ME,06Jun2015,MM,Gas,Subaru
+Vegan Pad Thai,1,meal,4.5,Rising Tide,05Jun2015,TP,Dining,Dinner
+Vegetarian Egg Rolls,1,meal,6.45,Rising Tide,05Jun2015,TP,Dining,Dinner
+Cabot Cheddar Cheese,2,lbs,9.99,Hannaford,04Jun2015,TP,Grocery,Cheese
+So Delicious Coconutmilk,0.5,gal,2.99,Hannaford,04Jun2015,TP,Grocery,Milk
+Greens Leaf Lettuce,1,item,1.99,Hannaford,04Jun2015,TP,Grocery,Vegetable
+Sweet Potatoes,1.87,lbs,1.85,Hannaford,04Jun2015,TP,Grocery,Vegetable
+Granny Smith Apple,1.96,lbs,1.94,Hannaford,04Jun2015,TP,Grocery,Fruit
+Hass Avocados,1,item,1.49,Hannaford,04Jun2015,TP,Grocery,Fruit
+Kale and Spinach Juicing Greens,11,oz,3.99,Hannaford,04Jun2015,TP,Grocery,Vegetable
+Chocolate Bar,3.5,oz,1,Hannaford,06Jun2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,06Jun2015,MM,Grocery,Snack
+Goya Maria Cookies,7,oz,0.89,Hannaford,06Jun2015,MM,Grocery,Snack
+Almond Butter,16,oz,7.49,Hannaford,06Jun2015,MM,Grocery,Nut Butter
+Peanut Butter,4.28,lbs,9.8,Uncle Dean's,06Jun2015,MM,Grocery,Nut Butter
+Cinnamon Raisin Bread,0.5,loaf,2.99,Uncle Dean's,06Jun2015,MM,Grocery,Bread
+So Delicious Coconutmilk,0.5,gal,1.99,Hannaford,09Jun2015,TP,Grocery,Milk
+Colgate Toothbrush,1,item,4.29,Hannaford,09Jun2015,TP,Health,Teeth
+So Del Coconut Ice Cream,2,c,3.99,Hannaford,09Jun2015,TP,Grocery,Snack
+Bananas,2.05,lbs,1,Hannaford,09Jun2015,TP,Grocery,Fruit
+Greens Kale,1,bunch,2.19,Hannaford,09Jun2015,TP,Grocery,Vegetable
+Whole Mushrooms,8,oz,1.79,Hannaford,09Jun2015,TP,Grocery,Mushroom
+Port Pie Garlic Dough,20,oz,2.39,Hannaford,06Jun2015,TP,Grocery,Bread
+So Del Coconut Ice Cream,2,c,3.99,Hannaford,06Jun2015,TP,Grocery,Snack
+So Delicious Coconutmilk,0.5,gal,1.99,Hannaford,06Jun2015,TP,Grocery,Milk
+Port Pie Beer Dough,20,oz,2.39,Hannaford,15Jun2015,TP,Grocery,Bread
+Port Pie GF Dough,16,oz,2.59,Hannaford,15Jun2015,TP,Grocery,Bread
+Dark Chocolate Bar,3.5,oz,1,Hannaford,15Jun2015,TP,Grocery,Snack
+Dark Chocolate Bar,3.5,oz,1,Hannaford,15Jun2015,TP,Grocery,Snack
+Tuttorosso Tomato Sauce,28,oz,1.59,Hannaford,15Jun2015,TP,Grocery,Canned Vegetable
+Almond Butter,16,oz,7.49,Hannaford,15Jun2015,TP,Grocery,Nut Butter
+So Del Coconut Ice Cream,2,c,3.99,Hannaford,15Jun2015,TP,Grocery,Snack
+So Delicious Coconutmilk,0.5,gal,1.99,Hannaford,15Jun2015,TP,Grocery,Milk
+Garlic,2,items,1.38,Hannaford,15Jun2015,TP,Grocery,Vegetable
+Ginger Root,0.33,lbs,0.99,Hannaford,15Jun2015,TP,Grocery,Spice
+Florida Green Avocado,1,item,1.99,Hannaford,15Jun2015,TP,Grocery,Fruit
+McIntosh Apples,3,lbs,3.79,Hannaford,15Jun2015,TP,Grocery,Fruit
+Baby Bella Mushrooms,10,oz,1.99,Hannaford,15Jun2015,TP,Grocery,Mushroom
+Red Peppers,1.5,lbs,3.74,Hannaford,15Jun2015,TP,Grocery,Vegetable
+English Muffins,18,oz,3.89,Uncle Dean's,08Jun2015,TP,Grocery,Bread
+Dry Milk Powder,0.65,lbs,2.53,Uncle Dean's,08Jun2015,TP,Grocery,Baking
+Local Honey,1.48,lbs,7.09,Uncle Dean's,08Jun2015,TP,Grocery,Sweetener
+Organic Frozen Peppers,10,oz,2.89,Uncle Dean's,08Jun2015,TP,Grocery,Vegetable
+Organic Frozen Mushrooms,10,oz,2.89,Uncle Dean's,08Jun2015,TP,Grocery,Vegetable
+Frozen Pineapple,1.27,lbs,3.16,Uncle Dean's,08Jun2015,TP,Grocery,Fruit
+Portabella Mushrooms,0.29,lbs,1.45,Uncle Dean's,08Jun2015,TP,Grocery,Mushroom
+Tacos and Drinks,2,meal,36.5,El Rayo,13Jun2015,TP,Dining,Dinner
+Frozen Red Raspberries,3.13,lbs,12.49,Uncle Dean's,15Jun2015,TP,Grocery,Fruit
+Frozen Wild Maine Blueberries,3.87,lbs,11.49,Uncle Dean's,15Jun2015,TP,Grocery,Fruit
+Mesa Sunrise Cereal,26.4,oz,4.99,Uncle Dean's,15Jun2015,TP,Grocery,Cereal
+Sesame Tahini,0.93,lbs,5.01,Uncle Dean's,15Jun2015,TP,Grocery,Condiment
+Gasoline,13.617,gal,36.75,Sunoco South China ME,22May2015,TP,Gas,Subaru
+Gasoline,9.645,gal,26.42,Sunoco South China ME,25May2015,TP,Gas,Subaru
+So Delicious Coconutmilk,0.5,gal,2.99,Hannaford,01Jun2015,MM,Grocery,Milk
+Chocolate Bar,3.5,oz,1,Hannaford,01Jun2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,01Jun2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,01Jun2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,01Jun2015,MM,Grocery,Snack
+White Vinegar,64,oz,2.79,Hannaford,29May2015,MM,Cleaning,Laundry
+So Delicious Coconutmilk,0.5,gal,2.99,Hannaford,29May2015,MM,Grocery,Milk
+Fruit and Nut Cereal,13.5,oz,3,Hannaford,29May2015,MM,Grocery,Cereal
+Chocolate Bar,3.5,oz,1,Hannaford,31May2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,31May2015,MM,Grocery,Snack
+Yellow Onions,5,lbs,4.49,Hannaford,31May2015,MM,Grocery,Vegetable
+Organic Chocolate Cookies,8,oz,2.99,Rising Tide,29May2015,MM,Grocery,Snack
+Trail Mix,0.35,lbs,4.48,Rising Tide,29May2015,MM,Dining,Dinner
+Milk Chocolate Pint,2,c,1.29,Rising Tide,29May2015,MM,Dining,Dinner
+Port Pie Beer Dough,20,oz,2.39,Hannaford,30May2015,MM,Grocery,Bread
+Goya Maria Cookies,7,oz,0.89,Hannaford,30May2015,MM,Grocery,Snack
+Baby Bella Mushrooms,10,oz,1.99,Hannaford,30May2015,MM,Grocery,Mushroom
+Baby Bella Mushrooms,10,oz,1.99,Hannaford,30May2015,MM,Grocery,Mushroom
+Red Peppers,1.7,lbs,3.38,Hannaford,30May2015,MM,Grocery,Mushroom
+Garlic,0.25,lbs,2,Uncle Dean's,20May2015,TP,Grocery,Vegetable
+Nutrional Yeast,0.46,lbs,4.55,Uncle Dean's,20May2015,TP,Grocery,Spice
+Sage,0.04,lbs,0.56,Uncle Dean's,20May2015,TP,Grocery,Spice
+Chia Seeds,0.88,lbs,5.36,Uncle Dean's,20May2015,TP,Grocery,Seeds
+Thompson Organic Raisins,1,item,2.23,Uncle Dean's,20May2015,TP,Grocery,Fruit
+Chai Tea,20,bags,3.79,Uncle Dean's,20May2015,TP,Grocery,Tea
+Wine,750,ml,7.99,Uncle Dean's,20May2015,TP,Grocery,Alcohol
+Thyme,0.04,lbs,0.56,Uncle Dean's,20May2015,TP,Grocery,Spice
+Scallions,2,items,1,Uncle Dean's,20May2015,TP,Grocery,Vegetable
+Celery,1,bunch,3.49,Uncle Dean's,20May2015,TP,Grocery,Vegetable
+Prepared Food,0.88,lbs,7.91,Whole Foods,23May2015,TP,Dining,Dinner
+Udi's Multigrain Bread,1,loaf,3.99,Whole Foods,23May2015,TP,Grocery,Bread
+Tortilla Chips,8,oz,2,Whole Foods,23May2015,TP,Grocery,Snack
+Udi's Multigrain Bread,1,loaf,3.99,Whole Foods,23May2015,TP,Grocery,Bread
+Bakeh Hotdog Rolls,1,item,2.5,Whole Foods,23May2015,TP,Grocery,Bread
+Green Leaf Lettuce,1,bunch,2.99,Whole Foods,23May2015,TP,Grocery,Vegetable
+Red Radishes,1,bunch,1.99,Whole Foods,23May2015,TP,Grocery,Vegetable
+Coconut Milk,13.5,oz,2.49,Whole Foods,23May2015,TP,Grocery,Fruit
+So Del Coconut Ice Cream,2,c,3.99,Whole Foods,23May2015,TP,Grocery,Snack
+Coconut Milk,13.5,oz,2.49,Whole Foods,23May2015,TP,Grocery,Fruit
+Chicken Breast,2.58,lbs,10.29,Whole Foods,23May2015,TP,Grocery,Meat
+Baby Bella Mushrooms,10,oz,2.99,Whole Foods,23May2015,TP,Grocery,Mushroom
+Twinings Variety Black Tea,20,bags,3.5,Whole Foods,23May2015,TP,Grocery,Tea
+Wells Pepperoni,5,oz,5.99,Whole Foods,23May2015,TP,Grocery,Meat
+Hass Avocados,2,items,3,Whole Foods,23May2015,TP,Grocery,Fruit
+Herbs Asst OG,2,items,4,Whole Foods,23May2015,TP,Beauty,General
+Spinach Artichoke Hummus,16,oz,4.49,Hannaford,26May2015,TP,Grocery,Condiment
+Silk Cashewmilk,0.5,gal,2.99,Hannaford,26May2015,TP,Grocery,Milk
+Tuttorosso Tomato Paste,6,oz,0.61,Hannaford,26May2015,TP,Grocery,Canned Vegetable
+Tuttorosso Tomato Paste,6,oz,0.61,Hannaford,26May2015,TP,Grocery,Canned Vegetable
+Tuttorosso Tomato Sauce,28,oz,1.59,Hannaford,26May2015,TP,Grocery,Canned Vegetable
+Almond Butter,16,oz,7.49,Hannaford,26May2015,TP,Grocery,Nut Butter
+Bananas,2.72,lbs,1.33,Hannaford,26May2015,TP,Grocery,Fruit
+Granny Smith Apple,1.86,lbs,2.4,Hannaford,26May2015,TP,Grocery,Fruit
+Organic Baby Spinach Greens,11,oz,5.99,Hannaford,26May2015,TP,Grocery,Vegetable
+Local Chevre Goat Cheese,1,item,7.59,Rising Tide,29May2015,TP,Grocery,Cheese
+Whoopie Pie GF,1,item,2.99,Rising Tide,29May2015,TP,Dining,Dinner
+Vegan Pad Thai,1,meal,4.5,Rising Tide,29May2015,TP,Dining,Dinner
+Frozen Desert,4,items,2.99,Uncle Dean's,30May2015,TP,Grocery,Snack
+Tortilla Chips,16,oz,3.19,Uncle Dean's,30May2015,TP,Grocery,Snack
+Mesa Sunrise Cereal,26.4,oz,4.99,Uncle Dean's,30May2015,TP,Grocery,Cereal
+Mesa Sunrise Cereal,26.4,oz,4.99,Uncle Dean's,30May2015,TP,Grocery,Cereal
+Port Pie GF Dough,16,oz,2.59,Hannaford,30May2015,TP,Grocery,Pizza
+Dole Chunky Pineapple,20,oz,1.39,Hannaford,30May2015,TP,Grocery,Fruit
+Ray's Gourmet Mustard,9,oz,3.99,Hannaford,30May2015,TP,Grocery,Condiment
+Organic Brown Rice,2,lbs,3.59,Hannaford,30May2015,TP,Grocery,Grain
+Silk Cashewmilk,0.5,gal,2.99,Hannaford,18May2015,TP,Grocery,Milk
+Rudi's GF Multigrain Bread,1,loaf,4.99,Hannaford,18May2015,TP,Grocery,Bread
+Borealis Organic Wheat Bread,1,loaf,5.99,Hannaford,18Jun2015,MM,Grocery,Bread
+Chocolate Bar,3.5,oz,1,Hannaford,18Jun2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,18Jun2015,MM,Grocery,Snack
+Chocolate Bar,3.5,oz,1,Hannaford,18Jun2015,MM,Grocery,Snack
+Goya Maria Cookies,7,oz,0.89,Hannaford,18Jun2015,MM,Grocery,Snack
+So Delicious Coconutmilk,0.5,gal,2.99,Hannaford,18Jun2015,MM,Grocery,Milk
+Yogi Bedtime Tea,16,bags,2.88,Vitacost,14Jun2015,TP,Grocery,Tea
+White Rice Flour,48,oz,5.09,Vitacost,14Jun2015,TP,Grocery,Baking
+Garbanzo and Fava Flour,22,oz,5.29,Vitacost,14Jun2015,TP,Grocery,Baking
+Organic Agave Amber,46,floz,10.79,Vitacost,14Jun2015,TP,Grocery,Sweetener
+Extra Virgin Coconut Oil,54,oz,16.98,Vitacost,14Jun2015,TP,Grocery,Oil
+Yogi Woman's Energy Tea,16,bags,2.88,Vitacost,14Jun2015,TP,Grocery,Tea
+Yogi Relaxed Mind Tea,16,bags,2.88,Vitacost,14Jun2015,TP,Grocery,Tea
+Yogi Ginkgo Clarity Tea,16,bags,2.88,Vitacost,14Jun2015,TP,Grocery,Tea
+Tom's Toothpaste,5.5,oz,3.18,Vitacost,14Jun2015,TP,Health,Teeth
+Yogi Muscle Recover Tea,16,bags,3.19,Vitacost,14Jun2015,TP,Grocery,Tea
+Potato Starch,24,oz,3.39,Vitacost,14Jun2015,TP,Grocery,Baking
+Tom's Toothpaste,5.5,oz,3.99,Vitacost,14Jun2015,TP,Health,Teeth
+Arrowroot Starch Flour,16,oz,4.49,Vitacost,14Jun2015,TP,Grocery,Baking
+Tamari,20,floz,4.99,Whole Foods,21Jun2015,TP,Grocery,Condiment
+Organic Sriracha,18.5,oz,6.99,Whole Foods,21Jun2015,TP,Grocery,Condiment
+Organic Coconut Milk,13.5,oz,2.49,Whole Foods,21Jun2015,TP,Grocery,Fruit
+Organic Coconut Milk,13.5,oz,2.49,Whole Foods,21Jun2015,TP,Grocery,Fruit
+Organic Tempeh,8,oz,2.69,Whole Foods,21Jun2015,TP,Grocery,Tofu
+Organic Tempeh,8,oz,2.69,Whole Foods,21Jun2015,TP,Grocery,Tofu
+Udi's Multigrain Bread,1,loaf,4.99,Whole Foods,21Jun2015,TP,Grocery,Bread
+Sweet Vidalia Onions,5,lbs,2.99,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Golden Beets,2.22,lbs,5.53,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Garlic,0.35,lbs,1.4,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Yellow Summer Squash,3.34,lbs,4.98,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Greens Red kale,0.73,lbs,2.18,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Organic Baby Bok Choy Greens,0.66,lbs,1.97,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Portabella Mushrooms,1.39,lbs,5.55,Whole Foods,21Jun2015,TP,Grocery,Vegetable
+Gasoline,1,item,30,OnTheRun 94 Pleasant St Waterville ME,30Apr2015,MM,Gas,Subaru
+Clamp-top Bottle,1,item,3.15,TJ Maxx,24Apr2015,MM,Household,Fermenting
+Greens Organic Kale,1.33,lbs,3.31,Whole Foods,17May2015,TP,Grocery,Vegetable
+English Cucumber,1,item,1.99,Whole Foods,17May2015,TP,Grocery,Vegetable
+Golden Beets,1.64,lbs,4.08,Whole Foods,17May2015,TP,Grocery,Vegetable
+Yellow Summer Squash,1.4,lbs,3.49,Whole Foods,17May2015,TP,Grocery,Vegetable
+Prepared Food,1.34,lbs,12.05,Whole Foods,17May2015,TP,Dining,Dinner
+Tofu,14,oz,1.99,Whole Foods,17May2015,TP,Grocery,Tofu
+Organic Tofu,14,oz,1.99,Whole Foods,17May2015,TP,Grocery,Tofu
+Yellow Onions,2,lbs,1.49,Whole Foods,17May2015,TP,Grocery,Vegetable
+Bottled Water,1,item,0.79,Whole Foods,17May2015,TP,Dining,Drink
+Hail Merry Lime Tart,3,oz,3.99,Whole Foods,17May2015,TP,Dining,Dessert
+Hail merry Lemon Tart,3,oz,3.99,Whole Foods,17May2015,TP,Dining,Dessert
+Granny Smith Apple,1.08,lbs,2.15,Whole Foods,17May2015,TP,Grocery,Fruit
+Empty Gel Caps,100,items,3.99,Whole Foods,17May2015,TP,Health,Medicine
+Hass Avocados,2,items,4,Whole Foods,17May2015,TP,Grocery,Fruit
+Silk Cashewmilk,0.5,gal,2.24,Hannaford,21Apr2015,TP,Grocery,Milk
+ME Family Farms Beef 85/15,1,lbs,5.99,Hannaford,21Apr2015,TP,Grocery,Meat
+Lemon,1,item,0.99,Hannaford,21Apr2015,TP,Grocery,Fruit
+Port Pie Multigrain Dough,20,oz,2.39,Hannaford,24Apr2015,MM,Grocery,Bread
+Port Pie GF Dough,16,oz,2.59,Hannaford,24Apr2015,MM,Grocery,Bread
+Daniele Pepperoni,3,oz,2.89,Hannaford,30Apr2015,MM,Grocery,Meat
+Port Pie Beer Dough,20,oz,2.39,Hannaford,30Apr2015,MM,Grocery,Bread
+Port Pie GF Dough,16,oz,2.59,Hannaford,30Apr2015,MM,Grocery,Bread
+Silk Almond-Coconutmilk,0.5,gal,2.99,Hannaford,30Apr2015,MM,Grocery,Milk
+Goya Maria Cookies,7,oz,0.89,Hannaford,30Apr2015,MM,Grocery,Snack
+Tuttorosso Tomato Sauce,28,oz,1.59,Hannaford,30Apr2015,MM,Grocery,Canned Vegetable
+Baby Bella Mushrooms,10,oz,1.99,Hannaford,30Apr2015,MM,Grocery,Mushroom
+Flax Oil,24,floz,19.99,Whole Foods,18Apr2015,TP,Grocery,Oil
+Bottled Water,1,item,1.49,Whole Foods,18Apr2015,TP,Dining,Drink
+Jarro Jarro-Dophil,30,items,29.99,Whole Foods,18Apr2015,TP,Health,Medicine
+Mesa Sunrise Cereal,26.4,oz,6.99,Whole Foods,18Apr2015,TP,Grocery,Cereal
+Golden Beets,1.72,lbs,4.28,Whole Foods,18Apr2015,TP,Grocery,Vegetable
+Prepared Food,0.55,lbs,4.94,Whole Foods,18Apr2015,TP,Dining,Dinner
+Summer Squash,2.74,lbs,6.82,Whole Foods,18Apr2015,TP,Grocery,Vegetable
+Greens Organic Red Chard,1.02,lbs,3.05,Whole Foods,18Apr2015,TP,Grocery,Vegetable
+Brussel Sprouts,0.74,lbs,1.84,Whole Foods,18Apr2015,TP,Grocery,Vegetable
+Greens Organic Red Kale,0.92,lbs,2.75,Whole Foods,18Apr2015,TP,Grocery,Vegetable
+Coffee Filters,100,items,1.99,Trader Joe's,18Apr2015,TP,Household,Kitchen
+Black Tea,48,bags,1.99,Trader Joe's,18Apr2015,TP,Grocery,Tea
+Sprouted Fourless Bread,1,loaf,3.99,Trader Joe's,18Apr2015,TP,Grocery,Bread
+Sponges,12,items,7.49,Trader Joe's,18Apr2015,TP,Cleaning,Kitchen
+Olive Oil,33.8,floz,6.99,Trader Joe's,18Apr2015,TP,Grocery,Oil
+Cremini Baby Bella Mushrooms,10,oz,1.99,Trader Joe's,18Apr2015,TP,Grocery,Mushroom
+Persian Cucumber,14,oz,2.49,Trader Joe's,18Apr2015,TP,Grocery,Vegetable
+Organic Strawberry Spread,10,oz,2.99,Trader Joe's,18Apr2015,TP,Grocery,Condiment
+Red Potatoes,1.5,lbs,1.79,Trader Joe's,18Apr2015,TP,Grocery,Vegetable
+Port Pie Beer Dough,20,oz,2.39,Hannaford,16Apr2015,TP,Grocery,Bread
+Port Pie GF Dough,16,oz,2.59,Hannaford,16Apr2015,TP,Grocery,Bread
+Goya Maria Cookies,7,oz,0.89,Hannaford,16Apr2015,TP,Grocery,Snack
+Goya White Beans,15.5,oz,0.79,Hannaford,16Apr2015,TP,Grocery,Beans
+Goya White Beans,15.5,oz,0.79,Hannaford,16Apr2015,TP,Grocery,Beans
+Goya Pinto Beans,15.5,oz,0.79,Hannaford,16Apr2015,TP,Grocery,Beans
+Goya Pinto Beans,15.5,oz,0.79,Hannaford,16Apr2015,TP,Grocery,Beans
+Goya Cannelini Beans,15.5,oz,0.79,Hannaford,16Apr2015,TP,Grocery,Beans
+Goya Cannelini Beans,15.5,oz,0.79,Hannaford,16Apr2015,TP,Grocery,Beans
+Ray's Gourmet Mustard,9,oz,3.99,Hannaford,16Apr2015,TP,Grocery,Condiment
+Cabot Greek Plain Yogurt,32,oz,4.19,Hannaford,16Apr2015,TP,Grocery,Dessert
+So Delicious Coconutmilk,0.5,gal,2.99,Hannaford,16Apr2015,TP,Grocery,Milk
+Mesa Sunrise Cereal,26.4,oz,7.99,Hannaford,16Apr2015,TP,Grocery,Cereal
+Brussel Sprouts,0.53,lbs,2.11,Hannaford,16Apr2015,TP,Grocery,Vegetable
+Yellow Onions,2,lbs,1.69,Hannaford,16Apr2015,TP,Grocery,Vegetable
+Baby Bella Mushrooms,10,oz,2.69,Hannaford,16Apr2015,TP,Grocery,Mushroom
+Organic Carrots,2,lbs,2.99,Hannaford,16Apr2015,TP,Grocery,Vegetable
+McIntosh Apples,3,lbs,3.79,Hannaford,16Apr2015,TP,Grocery,Fruit
+Raw Apple Cider Vinegar,32,floz,4.99,Uncle Dean's,07Apr2015,TP,Grocery,Juice
+Mushrooms,1,item,0.36,Uncle Dean's,07Apr2015,TP,Grocery,Mushroom
+Poly Tubing,15,ft,4.99,Tractor Supply,16Apr2015,MM,Household,Fermenting
+Quick Rolled Oats,1,items,1.29,Uncle Dean's,21Apr2015,MM,Grocery,Grain
+Peanut Butter,4.14,lbs,9.48,Uncle Dean's,21Apr2015,MM,Grocery,Nut Butter
+Port Pie Basil Dough,20,oz,2.39,Hannaford,27Mar2015,MM,Grocery,Bread
+Port Pie GF Dough,16,oz,2.59,Hannaford,27Mar2015,MM,Grocery,Bread
+Goya Maria Cookies,7,oz,0.89,Hannaford,27Mar2015,MM,Grocery,Snack
+Baby Bella Mushrooms,10,oz,1.99,Hannaford,27Mar2015,MM,Grocery,Mushroom
+Distilled Water,1,gal,2.58,Hannaford,21Apr2015,MM,Household,Fermenting
+So Delicious Coconutmilk,0.5,gal,2.99,Hannaford,21Apr2015,MM,Grocery,Milk
+Kale and Spinach Juicing Greens,11,oz,3.99,Hannaford,07Feb2015,MM,Grocery,Vegetable
+Method Cleaning Solution,34,floz,5.02,Target,19Apr2015,TP,Cleaning,Bathroom
+7th Gen Wipes,1,items,8.99,Target,19Apr2015,TP,Household,Bathroom
+Method Cleaning Solution,28,floz,3.03,Target,19Apr2015,TP,Cleaning,Bathroom
+Clorox Toilet Cleaner,24,floz,1.99,Target,19Apr2015,TP,Cleaning,Bathroom
+Trident Gum,50,items,2.99,Target,19Apr2015,TP,Gift,Kalkidan's Wedding
+Trident Gum,50,items,2.99,Target,19Apr2015,TP,Gift,Kalkidan's Wedding
+Trident Gum,180,items,5.49,Target,19Apr2015,TP,Grocery,Snack
+Cereal,10.6,oz,3.14,Target,19Apr2015,TP,Grocery,Cereal
+Cereal,10.6,oz,3.14,Target,19Apr2015,TP,Grocery,Cereal
+Krazy Glue,4,g,1.99,Target,19Apr2015,TP,Household,Maintenance
+SPF55 Sunscreen,3,floz,7.99,Target,19Apr2015,TP,Beauty,Skin
+Tom's Toothpaste,2.25,oz,3.24,Target,19Apr2015,TP,Health,Teeth
+Act Mouthwash,33.8,floz,6.49,Target,19Apr2015,TP,Health,Teeth
+Reach Floss,55,yards,0.97,Target,19Apr2015,TP,Health,Teeth
+Ibuprofen,250,items,8.39,Target,19Apr2015,TP,Health,Medicine
+Luna Bars,10.14,oz,5,Target,19Apr2015,TP,Grocery,Snack
+EOS Lip Gloss,0.25,oz,2.54,Target,19Apr2015,TP,Gift,Kalkidan's Wedding
+EOS Lip Gloss,0.25,oz,2.54,Target,19Apr2015,TP,Gift,Kalkidan's Wedding
+Pill Reminder Case,1,item,2.42,Kmart,03May2015,MM,Health,Medicine
+SPF50 Sunscreen Stick,0.45,oz,4.99,Rite Aid,01May2015,MM,Health,Skin
+Crest Toothpaste,4.2,oz,1.99,Rite Aid,01May2015,MM,Health,Teeth
+Colgate Toothbrush,1,item,2.64,Rite Aid,01May2015,MM,Health,Teeth
+Sunflower Lecithin,16,floz,9.99,Uncle Dean's,01May2015,MM,Health,Medicine
+Chocolate Bar,3,oz,2.19,Uncle Dean's,25Apr2015,TP,Grocery,Snack
+Sesame Tahini,0.88,lbs,4.74,Uncle Dean's,25Apr2015,TP,Grocery,Condiment
+Udi's Multigrain Bread,1,loaf,3.99,Uncle Dean's,25Apr2015,TP,Grocery,Bread
+White Vinegar,128,floz,2.79,Hannaford,25Apr2015,MM,Cleaning,Laundry
+Cabot Greek Plain Yogurt,32,oz,4.19,Hannaford,26Apr2015,TP,Grocery,Snack
+Red Onions,0.74,lbs,1.47,Hannaford,26Apr2015,TP,Grocery,Vegetable
+Celery,1,bunch,1.49,Hannaford,26Apr2015,TP,Grocery,Vegetable
+Yellow Onions,2,lbs,1.99,Hannaford,26Apr2015,TP,Grocery,Vegetable
+Baby Bella Mushrooms,10,oz,2.69,Hannaford,26Apr2015,TP,Grocery,Mushroom
+Minced Garlic,32,oz,4.99,Hannaford,26Apr2015,TP,Grocery,Vegetable
+Pad Thai Noodles,14,oz,2.99,Uncle Dean's,27Apr2015,TP,Grocery,Noodles
+Turkey Jerky Bar,1,item,1.99,Uncle Dean's,27Apr2015,TP,Grocery,Snack
+Bison Jerky Bar,1,item,1.99,Uncle Dean's,27Apr2015,TP,Grocery,Snack
+Bison Jerky Bar,1,item,1.99,Uncle Dean's,27Apr2015,TP,Grocery,Snack
+Organic Lemon Juice,33.8,floz,5.99,Uncle Dean's,27Apr2015,TP,Grocery,Juice
+Digestive Supplements,1,items,21.29,Uncle Dean's,27Apr2015,TP,Health,Medicine
+Rye Bread,1,loaf,4.89,Uncle Dean's,27Apr2015,TP,Grocery,Bread
+Hard Cider,750,ml,7.58,Jokas' Discount Beverage,12Apr2015,TP,Grocery,Alcohol
+Local Eggs,12,items,4.39,Uncle Dean's,02May2015,MM,Grocery,Meat
+Empty Gel Caps,100,items,3.99,Whole Foods,02May2015,MM,Health,Medicine
+SPF30 Mineral Sunscreen,4,oz,7.99,Whole Foods,02May2015,MM,Health,Skin
+Shampoo,8.5,floz,4.49,Whole Foods,02May2015,MM,Beauty,Hair
+Polartec Blanket,1,item,79.11,L.L. Bean,28Apr2015,TP,Household,Bedroom
+Gasoline,10.718,gal,29.36,OnTheRun 94 Pleasant St Waterville ME,01Jun2015,MM,Gas,Subaru
+Wiper Blades,1,items,10.54,AutoZone,02May2015,MM,Gas,Subaru
+Maine Book,1,item,27.5,Amazon,28Apr2015,TP,Gift,Kalkidan's Wedding
+Socks,4,items,10.54,TJ Maxx,30Apr2015,MM,Clothing,Feet
+Cell Booster,1,item,7,Goodwill Augusta,19Apr2015,MM,Household,Internet
+Fermenting Jars,3,items,8.44,Goodwill Augusta,19Apr2015,TP,Household,Fermenting
+Batteries,16,items,16.86,Radioshack,29Apr2015,MM,Household,Electricity
+Charger Cable,1,item,1.06,Goodwill Waterville,21Jun2015,MM,Household,Computer
+32gb Flash Drive,1,item,13.7,Best Buy,08Apr2015,MM,Gift,Kayla's Birthday
+Plants and Plant Supplies,1,items,97.79,Longfellow's Greenhouse,25May2015,TP,Household,Garden
+Plants and Plant Supplies,1,items,37.92,Longfellow's Greenhouse,19Apr2015,TP,Household,Garden
+Mad Max Movie Ticket,2,items,14.5,Flagship Cinema Waterville,30May2015,TP,Household,Movies
+Champagne Bottles,24,items,40.66,Adventures in Homebrewing,15Jun2015,MM,Household,Fermenting
+Dental Cleaning,1,item,147,Bethel Family Dentistry,02Apr2015,MM,Health,Teeth
+Radioshack Return,1,item,6.65,USPS Waterville,29Apr2015,MM,Household,Computer
+Hat Strings,1,items,5.77,Yardgoods,02May2015,MM,Clothing,Headwear
+Greens Kale,0.5,lbs,1.99,Uncle Dean's,30Mar2015,TP,Grocery,Vegetable
+Intense Hydration Cream,,pieces,19.29,Uncle Dean's,30Mar2015,TP,Beauty,Skin
+Spice Jar Lids,2,pieces,1.98,Uncle Dean's,30Mar2015,TP,Household,Kitchen
+Spice Jars,2,pieces,0.58,Uncle Dean's,30Mar2015,TP,Household,Kitchen
+Carrots,1,pieces,3.48,Uncle Dean's,30Mar2015,TP,Grocery,Vegetable
+Chocolate,12,oz,7.96,Uncle Dean's,30Mar2015,TP,Grocery,Baking
+Organic Diced Tomatoes,28,oz,1.89,Uncle Dean's,30Mar2015,TP,Grocery,Canned Vegetable
+Tomato Sauce,28,oz,1.89,Uncle Dean's,30Mar2015,TP,Grocery,Canned Vegetable
+Tortilla chips,16,oz,2.59,Uncle Dean's,30Mar2015,TP,Grocery,Snack
+Sesame Oil,11,fluid oz,4.49,A-Dong,04Apr2015,TP,Grocery,Spice
+Rice Vinegar,24,fluid oz,2.89,A-Dong,04Apr2015,TP,Grocery,Condiment
+Coconut Milk,13.5,oz,1.49,A-Dong,04Apr2015,TP,Grocery,Canned Fruit
+Chopsticks,8,pieces,3.65,A-Dong,04Apr2015,TP,Household,Kitchen
+Coconut Milk,13.5,oz,1.49,A-Dong,04Apr2015,TP,Grocery,Canned Fruit
+Panang Curry Paste,14,oz,3.69,A-Dong,04Apr2015,TP,Grocery,Spice
+hot Pepper Powder,1,lbs,3.59,A-Dong,04Apr2015,TP,Grocery,Spice
+Canned Goya Black Beans,15.5,oz,1.58,Hannaford,30Mar2015,TP,Grocery,Beans
+Canned Goya Black Beans,15.5,oz,1.58,Hannaford,30Mar2015,TP,Grocery,Beans
+Almondmilk,0.5,gallons,3.19,Hannaford,30Mar2015,TP,Grocery,Milk
+Natural Cane Sugar,2,lbs,3.49,Hannaford,30Mar2015,TP,Grocery,Sweetener
+Tazo Passion Tea,20,pieces,3.99,Hannaford,30Mar2015,TP,Grocery,Tea
+Rudis GF Bread,36,oz,9.98,Hannaford,30Mar2015,TP,Grocery,Bread
+Bananas,0.72,lbs,0.35,Hannaford,30Mar2015,TP,Grocery,Fruit
+Limes,1,pieces,0.5,Hannaford,30Mar2015,TP,Grocery,Fruit
+Nectarines,0.38,lbs,1.14,Hannaford,30Mar2015,TP,Grocery,Fruit
+Smoked Paprika Spice,4,oz,6.15,Penzey's,04Apr2015,TP,Grocery,Spice
+Northwoods Fire Spice,4,oz,7.99,Penzey's,04Apr2015,TP,Grocery,Spice
+Aleppo Pepper Spice,0.8,oz,3.79,Penzey's,04Apr2015,TP,Grocery,Spice
+Face Soap from Lush,2,pieces,25.92,Lush,08Apr2015,TP,Beauty,Soap
+Plastic Bucket Lids,2,pieces,3.73,Rising Tide,11Apr2015,TP,Household,Fermenting
+Corks,60,pieces,4.88,Rising Tide,11Apr2015,TP,Household,Fermenting
+Bottle Corker,1,pieces,14.48,Rising Tide,11Apr2015,TP,Household,Fermenting
+Boucherin goat cheese,0.37,lbs,4.95,Rising Tide,11Apr2015,TP,Grocery,Cheese
+Local Goat Cheese Spread,8,oz,7.89,Rising Tide,11Apr2015,TP,Grocery,Cheese
+Beet Burgers,0.53,lbs,4.5,Rising Tide,11Apr2015,TP,Dining,Dinner
+Udi's GF Hamburger Buns,10,oz,5.49,Hannaford,09Apr2015,TP,Grocery,Bread
+Port Pie Garlic Dough,20,oz,2.39,Hannaford,09Apr2015,TP,Grocery,Bread
+Port Pie GF Dough,16,oz,2.59,Hannaford,09Apr2015,TP,Grocery,Bread
+Cheddar Cheese,2,lbs,9.99,Hannaford,09Apr2015,TP,Grocery,Cheese
+Local Beef,1,lbs,5.99,Hannaford,09Apr2015,TP,Grocery,Meat
+Brown Basmati Rice,2,lbs,3.29,Trader Joe's,08Apr2015,TP,Grocery,Grain
+Bananas,2,pieces,0.38,Trader Joe's,08Apr2015,TP,Grocery,Fruit
+Organic Beets,1,lbs,1.69,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Garlic,3,oz,1.29,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Garlic,3,oz,1.29,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Sweet Potatoes,2,lbs,1.69,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Russet Potatoes,1.5,lbs,1.79,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Frozen Edamame Soybeans,12,oz,1.79,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Frozen Green Beans,24,oz,1.99,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Frozen Cod Fish,1.09,lbs,4.35,Trader Joe's,08Apr2015,TP,Grocery,Meat
+Frozen Tuna Fish Steaks,0.78,lbs,7.01,Trader Joe's,08Apr2015,TP,Grocery,Meat
+Salsa Chipotle Hot,2,lbs,3.98,Trader Joe's,08Apr2015,TP,Grocery,Condiment
+Frozen Peas,1,lbs,1.29,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Pepperoni,6,oz,3.29,Trader Joe's,08Apr2015,TP,Grocery,Meat
+Baby Spinach,6,oz,1.99,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Bacon Ends and Pieces,1,lbs,3.49,Trader Joe's,08Apr2015,TP,Grocery,Meat
+Organic Kale Greens,10,oz,2.29,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Red Peppers,6,pieces,4.14,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Yellow Squash,3,lbs,6.87,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Persian Cucumbers,14,oz,2.49,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Cauliflower,1,pieces,2.49,Trader Joe's,08Apr2015,TP,Grocery,Vegetable
+Cremini Baby Bella Mushrooms,10,oz,1.99,Trader Joe's,08Apr2015,TP,Grocery,Mushroom
+Avocado,24,oz,5.96,Trader Joe's,08Apr2015,TP,Grocery,Fruit
+Canned Cannelini Beans,31,oz,1.58,Hannaford,16Apr2015,TP,Grocery,Beans
+Ray's Dijon Mustard,9,oz,3.99,Hannaford,16Apr2015,TP,Grocery,Condiment
+So Delicious CoconutMilk,0.5,gallons,2.99,Hannaford,16Apr2015,TP,Grocery,Milk
+GF Cereal,26.4,oz,7.99,Hannaford,16Apr2015,TP,Grocery,Cereal
+Brussels Sprouts,0.53,lbs,2.11,Hannaford,16Apr2015,TP,Grocery,Vegetable
+Yellow Onions,2,lbs,1.69,Hannaford,16Apr2015,TP,Grocery,Vegetable
+Baby Bella Crimini Mushrooms,10,oz,2.69,Hannaford,16Apr2015,TP,Grocery,Mushroom
+Organic Carrots,2,lbs,2.99,Hannaford,16Apr2015,TP,Grocery,Vegetable
+McIntosh Apples,3,lbs,3.79,Hannaford,16Apr2015,TP,Grocery,Fruit
+Portland Pie Pizza Dough,20,oz,2.39,Hannaford,14May2015,TP,Grocery,Bread
+Greens Baby Spinach,5,oz,2.5,Hannaford,14May2015,TP,Grocery,Vegetable
+Hannaford Sliced White Mushrooms,8,oz,1.79,Hannaford,14May2015,TP,Grocery,Mushroom
+Rainbow Pepper Pack Red Green Yellow,1,lbs,2.49,Hannaford,14May2015,TP,Grocery,Vegetable
+Mesa Sunrise GF Cereal,26.4,oz,4.99,Uncle Dean's,08May2015,MM,Grocery,Cereal
+Chips,5.5,oz,2.19,Uncle Dean's,08May2015,MM,Grocery,Snack
+Portabella Mushrooms,0.55,lbs,2.74,Uncle Dean's,08May2015,MM,Grocery,Mushroom
+Cinnamon Raisin Bread,0.5,Other type of measure,2.99,Uncle Dean's,08May2015,MM,Grocery,Bread
+Portland Pie Pizza Dough,20,oz,2.39,Hannaford,08May2015,MM,Grocery,Bread
+Cabot X-Sharp Cheddar,2,lbs,9.99,Hannaford,08May2015,MM,Grocery,Cheese
+So Delicious CoconutMilk,0.5,lbs,2.99,Hannaford,08May2015,MM,Grocery,Milk
+Squash Zucchini,0.48,lbs,0.96,Hannaford,08May2015,MM,Grocery,Vegetable
+White Onion,0.69,lbs,1.58,Hannaford,08May2015,MM,Grocery,Vegetable
+Red Holland Pepper,0.5,lbs,1.35,Hannaford,08May2015,MM,Grocery,Vegetable
+Yellow Holland Pepper,0.44,lbs,1.18,Hannaford,08May2015,MM,Grocery,Vegetable
+Summer Squash,1.05,lbs,2.09,Hannaford,08May2015,MM,Grocery,Vegetable
+Bagged Avocados,3,items,1.99,Hannaford,08May2015,MM,Grocery,Fruit
+Goya Maria Cookie,7,oz,0.89,Hannaford,15May2015,MM,Grocery,Snack
+cabot greek yogurt,2,lbs,4.19,Hannaford,15May2015,MM,Grocery,Snack
+So Delicious CoconutMilk,0.5,gal,2.99,Hannaford,15May2015,MM,Grocery,Milk
+Watercress,0.275,lbs,0.99,Hannaford,15May2015,MM,Grocery,Vegetable
+Cinnamon Raisin Bread,0.5,loaf,2.99,Uncle Dean's,15May2015,MM,Grocery,Bread
+Dr Bronners Almond Soap,32,floz,11.89,Uncle Dean's,15May2015,MM,Beauty,Soap
+Umbro Sweat Bottoms,1,item,9.99,TJ Maxx,03May2015,MM,Clothing,Bottoms
+Polyester Socks,4,items,12.99,TJ Maxx,24Apr2015,MM,Clothing,Feet
+Film Postage,1,item,3.69,USPS,18Apr2015,MM,Art,Photography
+Sport Stretch Boxer Brief Underwear,2,items,14.99,TJ Maxx,21Apr2015,MM,Clothing,Underwear
+"Bagels, GF",5,items,6.79,Uncle Dean's,21Jan2015,UK,Grocery,Bread
+Dry Black Beans,0.94,lbs,1.39,Uncle Dean's,21Jan2015,UK,,
+Local Arugula,#VALUE!,lbs,2.80,Uncle Dean's,21Jan2015,UK,,
+GF Bagels,5.00,pieces,6.79,Uncle Dean's,21Jan2015,UK,,
+Canned Black Beans,0.94,lbs,1.39,Uncle Dean's,21Jan2015,UK,,
+Organic Carrots,1.02,lbs,2.34,Uncle Dean's,21Jan2015,UK,,
+Cereal,1.65,lbs,4.99,Uncle Dean's,21Jan2015,UK,,
+Chard,0.50,lbs,2.69,Uncle Dean's,21Jan2015,UK,,
+Coconutmilk,0.50,gallons,2.79,Uncle Dean's,21Jan2015,UK,,
+Eggs,1.00,dozen,4.39,Uncle Dean's,21Jan2015,UK,,
+GF Bread,14.10,oz,3.69,Uncle Dean's,21Jan2015,UK,,
+Organic Masa Harina,1.49,lbs,5.17,Uncle Dean's,21Jan2015,UK,,
+Peanut Butter,1.93,lbs,5.19,Uncle Dean's,21Jan2015,UK,,
+Tea,16.00,pieces,3.16,Uncle Dean's,21Jan2015,UK,,
+Organic Tomato Paste,0.38,lbs,1.49,Uncle Dean's,21Jan2015,UK,,
+Raw Almonds,4.49,lbs,27.84,Uncle Dean's,1/22/2015,UK,,
+Beef,1.09,lbs,7.18,Uncle Dean's,1/23/2015,UK,,
+Blueberries,1.44,lbs,4.74,Uncle Dean's,1/23/2015,UK,,
+Raw Cashews,3.70,lbs,23.57,Uncle Dean's,1/23/2015,UK,,
+Arugula,0.41,lbs,2.87,Uncle Dean's,1/24/2015,UK,,
+Coconut Flour,1.40,lbs,6.43,Uncle Dean's,1/24/2015,UK,,
+Avocado,0.31,lbs,0.99,Hannaford,1/26/2015,UK,,
+Dried Chickpeas,1.05,lbs,2.61,Uncle Dean's,1/26/2015,UK,,
+Garlic,0.08,lbs,0.69,Hannaford,1/26/2015,UK,,
+GF Pasta,1.00,lbs,3.59,Hannaford,1/26/2015,UK,,
+Ginger,0.30,lbs,0.90,Hannaford,1/26/2015,UK,,
+Kale and Spinach,0.69,lbs,3.99,Hannaford,1/26/2015,UK,,
+Nutritional Yeast,0.42,lbs,3.82,Uncle Dean's,1/26/2015,UK,,
+WW Pasta,0.83,lbs,1.49,Hannaford,1/26/2015,UK,,
+Organic Yellow Onions,3.00,lbs,3.99,Hannaford,1/26/2015,UK,,
+Almondmilk,0.25,gallon,1.79,Uncle Dean's,1/28/2015,UK,,
+Cane Sugar,4.00,lbs,1.99,Save-a-Lot,1/28/2015,UK,,
+Portabellas,1.81,lbs,9.04,Uncle Dean's,1/28/2015,UK,,
+Avocado,0.31,lbs,0.99,Hannaford,1/29/2015,UK,,
+GF Pizza Dough,1.00,lbs,2.59,Hannaford,1/29/2015,UK,,
+Kale and Spinach,0.69,lbs,3.99,Hannaford,1/29/2015,UK,,
+Mixed Peppers,0.50,lbs,2.79,Hannaford,1/29/2015,UK,,
+Oranges,3.00,lbs,3.99,Hannaford,1/29/2015,UK,,
+Pizza Dough,1.00,lbs,2.39,Hannaford,1/29/2015,UK,,
+Tomato Paste,0.38,lbs,0.61,Hannaford,1/29/2015,UK,,
+Tomato Sauce,1.75,lbs,1.59,Hannaford,1/29/2015,UK,,
+Bar Soap,0.31,lbs,4.59,Uncle Dean's,1/31/2015,UK,Household,Laundry
+Blueberries,3.96,lbs,11.09,Uncle Dean's,1/31/2015,UK,,
+Borax,4.75,lbs,4.19,Hannaford,1/31/2015,UK,Household,Laundry
+Canned Black Beans,1.81,lbs,1.99,Hannaford,1/31/2015,UK,,
+Celery,1.00,lbs,2.49,Uncle Dean's,1/31/2015,UK,,
+Chocolate Chips,1.25,lbs,5.29,Hannaford,1/31/2015,UK,,
+Coconut Milk,0.84,lbs,1.89,Hannaford,1/31/2015,UK,,
+Eggs,1.00,dozen,3.99,Hannaford,1/31/2015,UK,,
+GF Bread,14.10,oz,3.69,Uncle Dean's,1/31/2015,UK,,
+Kale,0.50,lbs,2.39,Uncle Dean's,1/31/2015,UK,,
+Seltzer Water,1.00,liters,0.89,Hannaford,1/31/2015,UK,,
+Washing Soda,3.44,lbs,3.49,Hannaford,1/31/2015,UK,Household,Laundry
+Brown Sugar,2.00,lbs,2.29,Hannaford,2/1/2015,UK,,
+GF Hamburger Buns,4.00,pieces,5.99,Hannaford,2/1/2015,UK,,
+Hamburger Buns,8.00,pieces,3.99,Hannaford,2/1/2015,UK,,
+Salted Butter,1.00,lbs,4.59,Hannaford,2/1/2015,UK,,
+Tomato Paste,0.38,lbs,0.61,Hannaford,2/1/2015,UK,,
+Unsalted Butter,1.00,lbs,4.29,Hannaford,2/1/2015,UK,,
+Brown Rice,1.03,lbs,1.74,Uncle Dean's,2/3/2015,UK,,
+Organic Carrots,1.65,lbs,3.78,Uncle Dean's,2/3/2015,UK,,
+Milk Powder,0.85,lbs,3.22,Uncle Dean's,2/3/2015,UK,,
+Organic Frozen Mixed Peppers,0.63,lbs,2.89,Uncle Dean's,2/3/2015,UK,,
+Portabellas,0.70,lbs,3.49,Uncle Dean's,2/3/2015,UK,,
+Potatoes,0.84,lbs,0.83,Uncle Dean's,2/3/2015,UK,,
+Pea Sprouts,0.38,lbs,0.99,Uncle Dean's,2/3/2015,UK,,
+Tahini,0.99,lbs,5.14,Uncle Dean's,2/3/2015,UK,,
+Organic Tofu,0.75,lbs,1.49,Uncle Dean's,2/3/2015,UK,,
+Brown Rice Flour,3.00,lbs,5.29,Vitacost,2/4/2015,UK,,
+Coconut Oil,0.42,gallons,18.99,Vitacost,2/4/2015,UK,,
+Flax Meal,2.00,lbs,7.09,Vitacost,2/4/2015,UK,,
+GF Pasta,1.00,lbs,2.43,Vitacost,2/4/2015,UK,,
+Liquid Soap,128.00,fluid oz,40.49,Vitacost,2/4/2015,UK,Cleaning,Kitchen
+Potato Starch,1.50,lbs,2.56,Vitacost,2/4/2015,UK,,
+Psyllium Husk,2.75,lbs,17.99,Vitacost,2/4/2015,UK,,
+White Rice Flour,3.00,lbs,5.09,Vitacost,2/4/2015,UK,,
+coffee,1,lbs,12.99,Barrels,2/5/2015,UK,,
+Apples,4.69,lbs,6.05,Hannaford,2/6/2015,UK,,
+Baby Mushrooms,0.63,lbs,2.89,Hannaford,2/6/2015,UK,,
+Beef,1.00,lbs,5.99,Hannaford,2/6/2015,UK,,
+Bread Yeast,0.75,oz,2.19,Hannaford,2/6/2015,UK,,
+Garlic,0.08,lbs,0.69,Hannaford,2/6/2015,UK,,
+GF Pizza Dough,1.00,lbs,2.59,Hannaford,2/6/2015,UK,,
+Pizza Dough,1.00,lbs,2.39,Hannaford,2/6/2015,UK,,
+Tomato Sauce,1.75,lbs,1.59,Hannaford,2/6/2015,UK,,
+Organic Yellow Onions,3.00,lbs,3.99,Hannaford,2/6/2015,UK,,
+Aluminum Foil,85.00,sq ft,3.29,Target,2/8/2015,UK,Household,Kitchen
+Quart Plastic Bags,75.00,pieces,5.15,Target,2/8/2015,UK,Household,Kitchen
+Gallon Plastic Bags,68.00,pieces,5.43,Target,2/8/2015,UK,Household,Kitchen
+Contact Fluid,20.00,fluid oz,16.49,Target,2/8/2015,UK,Health,Eyes
+Larabar,0.80,lbs,5.59,Target,2/8/2015,UK,Grocery,Snack
+Larabar,0.85,lbs,8.00,Target,2/8/2015,UK,Grocery,Snack
+Liquid Soap,32.00,floz,12.58,Target,2/8/2015,UK,Household,Bathroom
+Mop,1.00,item,11.99,Target,2/8/2015,UK,Cleaning,Kitchen
+Paper Towel,346.00,sq ft,7.99,Target,2/8/2015,UK,Household,Kitchen
+Parchment Paper,50.00,sq ft,3.94,Target,2/8/2015,UK,Household,Kitchen
+Plastic Wrap,200.00,sq ft,2.19,Target,2/8/2015,UK,Household,Kitchen
+Sponges,9.00,pieces,7.99,Target,2/8/2015,UK,Household,Kitchen
+Toilet Paper,24.00,sq ft,13.99,Target,2/8/2015,UK,Household,Bathroom
+Toothpaste,4.70,oz,4.29,Target,2/8/2015,UK,Health,Teeth
+Peanut Butter,1.81,lbs,4.87,Uncle Dean's,2/10/2015,UK,Grocery,Nut Butter
+Canned Black Beans,1.81,lbs,1.99,Hannaford,2/11/2015,UK,,
+Canned Salmon,0.38,lbs,3.69,Hannaford,2/11/2015,UK,,
+Canned Salmon,0.38,lbs,3.69,Hannaford,2/11/2015,UK,,
+Canned White Beans,0.97,lbs,0.99,Hannaford,2/11/2015,UK,,
+Canned White Beans,0.97,lbs,0.99,Hannaford,2/11/2015,UK,,
+Cheese,2.00,lbs,9.99,Hannaford,2/11/2015,UK,,
+Chocolate,0.19,lbs,3.59,Hannaford,2/11/2015,UK,,
+Dijon Mustard,1.00,lbs,4.59,Hannaford,2/11/2015,UK,,
+Olive Oil,0.79,fl oz,21.99,Hannaford,2/11/2015,UK,,
+Potatoes,10.00,lbs,4.99,Hannaford,2/11/2015,UK,,
+Rice Vinegar,0.08,gallons,1.49,Hannaford,2/11/2015,UK,,
+Tomato Paste,0.38,lbs,0.61,Hannaford,2/11/2015,UK,,
+Tomato Paste,0.38,lbs,0.61,Hannaford,2/11/2015,UK,,
+Tomato Sauce,1.75,lbs,1.59,Hannaford,2/11/2015,UK,,
+Tomato Sauce,1.75,lbs,1.59,Hannaford,2/11/2015,UK,,
+White Vinegar,1.00,gallons,2.79,Hannaford,2/11/2015,UK,,
+Canola Oil,2.00,lbs,6.69,Uncle Dean's,2/12/2015,UK,,
+Organic Carrots,1.57,lbs,3.60,Uncle Dean's,2/12/2015,UK,,
+Cereal,1.65,lbs,4.99,Uncle Dean's,2/12/2015,UK,,
+Chard,0.50,lbs,2.59,Uncle Dean's,2/12/2015,UK,,
+Cocoa Powder,0.61,lbs,2.68,Uncle Dean's,2/12/2015,UK,,
+Cocoa Powder,0.64,lbs,2.81,Uncle Dean's,2/12/2015,UK,,
+Dates,3.86,lbs,14.09,Uncle Dean's,2/12/2015,UK,,
+Portabellas,0.32,lbs,2.59,Uncle Dean's,2/12/2015,UK,,
+Baby Mushrooms,0.63,lbs,1.99,Trader Joe's,2/14/2015,UK,,
+Bacon,1.00,lbs,2.99,Trader Joe's,2/14/2015,UK,,
+Beef,1.00,lbs,5.99,Hannaford,2/14/2015,UK,,
+Brown Rice,3.00,lbs,3.29,Trader Joe's,2/14/2015,UK,,
+Organic Cane Sugar,2.00,lbs,3.49,Trader Joe's,2/14/2015,UK,,
+Chocolate Chips,0.63,lbs,1.99,Trader Joe's,2/14/2015,UK,,
+Chocolate Chips,0.75,lbs,1.99,Trader Joe's,2/14/2015,UK,,
+Cucumbers,0.88,lbs,2.49,Trader Joe's,2/14/2015,UK,,
+Frozen Edamame,0.75,lbs,1.69,Trader Joe's,2/14/2015,UK,,
+Flax Meal,1.00,lbs,2.69,Trader Joe's,2/14/2015,UK,,
+Organic Garlic,0.19,lbs,1.49,Trader Joe's,2/14/2015,UK,,
+GF Pizza Dough,1.00,lbs,2.59,Hannaford,2/14/2015,UK,,
+Pizza Dough,1.00,lbs,2.39,Hannaford,2/14/2015,UK,,
+Salsa,1.00,lbs,2.99,Trader Joe's,2/14/2015,UK,,
+Sesame Oil,0.04,gallons,2.29,Trader Joe's,2/14/2015,UK,,
+Spinach,0.38,lbs,1.99,Trader Joe's,2/14/2015,UK,,
+Organic Sweet Onions,2.00,lbs,2.79,Trader Joe's,2/14/2015,UK,,
+Sweet Potatoes,3.00,lbs,4.49,Trader Joe's,2/14/2015,UK,,
+Organic Tofu,1.00,lbs,1.99,Trader Joe's,2/14/2015,UK,,
+Organic Tofu,1.00,lbs,1.99,Trader Joe's,2/14/2015,UK,,
+Tortilla Chips,1.00,lbs,2.69,Trader Joe's,2/14/2015,UK,,
+Turbinado Sugar,1.50,lbs,3.49,Trader Joe's,2/14/2015,UK,,
+Organic Yellow Onions,0.56,lbs,1.69,Trader Joe's,2/14/2015,UK,,
+Organic Yellow Onions,2.00,lbs,2.99,Trader Joe's,2/14/2015,UK,,
+Avocado,0.31,lbs,1.29,Uncle Dean's,2/18/2015,UK,,
+Coconutmilk,0.50,gallons,3.19,Uncle Dean's,2/18/2015,UK,,
+Coffee,12.00,oz,11.69,Uncle Dean's,2/18/2015,UK,,
+GF Bread,14.10,oz,3.89,Uncle Dean's,2/18/2015,UK,,
+GF Bread,14.10,oz,3.89,Uncle Dean's,2/18/2015,UK,,
+Kale,0.50,lbs,2.99,Uncle Dean's,2/18/2015,UK,,
+Mixed Peppers,10.00,oz,2.89,Uncle Dean's,2/18/2015,UK,,
+Organic Tofu,12.00,oz,1.49,Uncle Dean's,2/18/2015,UK,,
+Organic Tofu,12.00,oz,1.49,Uncle Dean's,2/18/2015,UK,,
+Hummus,10.00,oz,3.49,Hannaford,2/22/2015,UK,,
+Seltzer Water,1.00,liters,0.89,Hannaford,2/22/2015,UK,,
+Tortilla Chips,5.50,oz,2.50,Hannaford,2/22/2015,UK,,
+Chard,0.50,lbs,3.79,Uncle Dean's,2/23/2015,UK,,
+Peanut Butter,4.22,lbs,9.66,Uncle Dean's,2/23/2015,UK,,
+tea,16.00,pieces,2.99,Uncle Dean's,2/23/2015,UK,,
+tea,20.00,pieces,2.99,Uncle Dean's,2/23/2015,UK,,
+Tea,20.00,pieces,2.99,Uncle Dean's,2/23/2015,UK,,
+Avocado,1.86,lbs,5.94,Hannaford,2/24/2015,UK,,
+Ginger,0.45,lbs,1.35,Hannaford,2/24/2015,UK,,
+Kale and Spinach,11.00,oz,3.99,Hannaford,2/24/2015,UK,,
+Minced Garlic,8.00,oz,1.99,Hannaford,2/24/2015,UK,,
+Oranges,4.00,lbs,4.99,Hannaford,2/24/2015,UK,,
+Baby Mushrooms,0.63,lbs,2.69,Hannaford,2/27/2015,UK,,
+GF Pizza Dough,1.00,lbs,2.59,Hannaford,2/27/2015,UK,,
+Pizza Dough,1.00,lbs,2.39,Hannaford,2/27/2015,UK,,
+Baby Mushrooms,0.63,lbs,2.50,Whole Foods,2/28/2015,UK,,
+GF Beer,750.00,ml,11.99,Whole Foods,2/28/2015,UK,,
+Beets,1.69,lbs,4.21,Whole Foods,2/28/2015,UK,,
+Cabbage,2.86,lbs,1.97,Whole Foods,2/28/2015,UK,,
+Coconutmilk,0.50,gallons,3.00,Whole Foods,2/28/2015,UK,,
+Collard Greens,0.98,lbs,1.95,Whole Foods,2/28/2015,UK,,
+Flax Oil,16.00,fl oz,13.99,Whole Foods,2/28/2015,UK,,
+Ginger,0.20,lbs,0.80,Whole Foods,2/28/2015,UK,,
+Kale,1.09,lbs,3.26,Whole Foods,2/28/2015,UK,,
+Miso,8.00,oz,4.99,Whole Foods,2/28/2015,UK,,
+Parsnip,0.83,lbs,1.65,Whole Foods,2/28/2015,UK,,
+Daikon Radish,0.85,lbs,1.27,Whole Foods,2/28/2015,UK,,
+Rutabaga,0.67,lbs,1.00,Whole Foods,2/28/2015,UK,,
+Summer Squash,1.12,lbs,2.79,Whole Foods,2/28/2015,UK,,
+Sweet Potatoes,1.61,lbs,2.40,Whole Foods,2/28/2015,UK,,
+Sweet Potatoes,1.76,lbs,4.38,Whole Foods,2/28/2015,UK,,
+Tension Tamer Tea,20,pieces,2.39,Uncle Dean's,3/2/2015,UK,,
+Loose Chai Tea,0.15,lbs,3.9,Uncle Dean's,3/2/2015,UK,,
+Italian Seasoning Spice,0.05,lbs,0.8,Uncle Dean's,3/2/2015,UK,,
+Poppy Seeds Spice,0.15,lbs,1.8,Uncle Dean's,3/2/2015,UK,,
+Ground Allspice Spice,0.05,lbs,1.3,Uncle Dean's,3/2/2015,UK,,
+Whole Mustard Seeds Spice,0.16,lbs,0.96,Uncle Dean's,3/2/2015,UK,,
+Bay Leaves Spice,0.01,lbs,0.2,Uncle Dean's,3/2/2015,UK,,
+Zaathar Spice,0.19,lbs,3.04,Uncle Dean's,3/2/2015,UK,,
+Vanilla Bean Spice,3,pieces,3.87,Uncle Dean's,3/2/2015,UK,,
+Onion Powder Spice,0.11,lbs,1.1,Uncle Dean's,3/2/2015,UK,,
+Ground Garlic Spice,0.18,lbs,1.44,Uncle Dean's,3/2/2015,UK,,
+Local Carrots,1,lbs,1.39,Uncle Dean's,3/2/2015,UK,,
+Local Carrots,1,lbs,1.39,Uncle Dean's,3/2/2015,UK,,
+Raw Almonds,4.34,lbs,26.91,Uncle Dean's,3/2/2015,UK,,
+Veganaise,16,fluid oz,3.79,Uncle Dean's,3/2/2015,UK,,
+Raw Sunflower Seeds,0.64,lbs,1.4,Uncle Dean's,3/2/2015,UK,,
+Dried Chick Peas,0.9,lbs,2.24,Uncle Dean's,3/2/2015,UK,,
+Dried Black Beans,0.91,lbs,2.63,Uncle Dean's,3/2/2015,UK,,
+Avocado,12,oz,1.98,Uncle Dean's,3/2/2015,UK,,
+GF Cereal,26.4,oz,4.99,Uncle Dean's,3/2/2015,UK,,
+Organic Tortilla Chips,16,oz,2.59,Uncle Dean's,3/2/2015,UK,,
+Hard Cider,22,fluid oz,7.43,Other,3/3/2015,UK,,
+Scallions,1,pieces,1.49,Uncle Dean's,3/3/2015,UK,,
+Chocolate,3,oz,2.19,Uncle Dean's,3/3/2015,UK,,
+Pizza Dough,20,oz,2.39,Hannaford,3/4/2015,UK,,
+GF Pizza Dough,16,oz,2.59,Hannaford,3/4/2015,UK,,
+Maria Crackers,3.5,oz,0.55,Hannaford,3/4/2015,UK,,
+hamburger buns,17.5,oz,3.99,Hannaford,3/4/2015,UK,,
+Salmon Burgers,12.8,oz,6.69,Hannaford,3/4/2015,UK,,
+Cucumbers,0.63,lbs,1.25,Hannaford,3/4/2015,UK,,
+Clementine Tangerines,5,lbs,5.99,Hannaford,3/4/2015,UK,,
+Organic Yellow Onions,3,lbs,3.99,Hannaford,3/4/2015,UK,,
+Organic Potatoes,3,lbs,4.99,Hannaford,3/4/2015,UK,,
+Sliced Baby Bella Mushrooms,8,oz,1.49,Hannaford,3/4/2015,UK,,
+mini sweet peppers,8,oz,2.79,Hannaford,3/4/2015,UK,,
+kale and spinach juicing greens,11,oz,3.99,Hannaford,3/4/2015,UK,,
+shredded coconut,2.39,lbs,9.32,Uncle Dean's,3/7/2015,UK,,
+Raisins,0.65,lbs,2.4,Uncle Dean's,3/7/2015,UK,,
+Cocoa Powder,3.87,lbs,15.29,Uncle Dean's,3/7/2015,UK,,
+Oatmeal,1.2,lbs,1.31,Uncle Dean's,3/7/2015,UK,,
+Organic Frozen Peas,10,oz,2.59,Uncle Dean's,3/7/2015,UK,,
+Frozen Broccoli,1,lbs,2.19,Uncle Dean's,3/7/2015,UK,,
+Organic Frozen Mushrooms,10,oz,2.8,Uncle Dean's,3/7/2015,UK,,
+Eggs,1,Other type of measure,4.39,Uncle Dean's,3/7/2015,UK,,
+Coconut Milk,27,fluid oz,3.78,Uncle Dean's,3/7/2015,UK,,
+Baking Powder,8.1,oz,2.79,Hannaford,3/7/2015,UK,,
+Whole Milk,0.25,gallons,1.89,Hannaford,3/7/2015,UK,,
+Unsalted Butter,1,lbs,3.99,Hannaford,3/7/2015,UK,,
+coconutmilk,0.5,gallons,2.99,Hannaford,3/7/2015,UK,,
+chocolate chips,20,oz,5.29,Hannaford,3/7/2015,UK,,
+WW Pasta,16,oz,2.69,Hannaford,3/9/2015,UK,,
+Seltzer Water,1,liters,0.89,Hannaford,3/9/2015,UK,,
+Tomato Paste,12,oz,1.22,Hannaford,3/9/2015,UK,,
+Tomato Sauce,56,oz,3.18,Hannaford,3/9/2015,UK,,
+Beef,16,oz,5.99,Hannaford,3/9/2015,UK,,
+Avocado,12,oz,2.38,Hannaford,3/9/2015,UK,,
+Shiitake Mushrooms,5,oz,3.99,Hannaford,3/9/2015,UK,,
+UFF Kombucha,16.9,fluid oz,4.29,Uncle Dean's,3/10/2015,UK,,
+Organic Miniola Clementines,5,lbs,4.99,Uncle Dean's,3/10/2015,UK,,
+Coconutmilk,0.5,gallons,3.19,Uncle Dean's,3/10/2015,UK,,
+Brown Rice Noodles,1,pieces,2.79,Uncle Dean's,3/10/2015,UK,,
+Tahini,1,lbs,5.19,Uncle Dean's,3/10/2015,UK,,
+Bread,1,pieces,4.89,Uncle Dean's,3/10/2015,UK,,
+Portabella Mushrooms,0.6,lbs,2.99,Uncle Dean's,3/10/2015,UK,,
+Organic Tofu,12,oz,2.69,Uncle Dean's,3/10/2015,UK,,
+Chocolate Bites,6,pieces,4.49,Uncle Dean's,3/10/2015,UK,,
+GF Pizza Dough,16,oz,2.59,Hannaford,3/11/2015,UK,,
+Pizza Dough,18,oz,2.39,Hannaford,3/11/2015,UK,,
+Bacon,2,lbs,5.98,Trader Joe's,3/14/2015,UK,,
+Tofu,2,lbs,3.98,Trader Joe's,3/14/2015,UK,,
+Salsa,16,oz,1.99,Trader Joe's,3/14/2015,UK,,
+Cucumbers,14,oz,2.49,Trader Joe's,3/14/2015,UK,,
+GF Cereal,26.4,oz,4.99,Uncle Dean's,3/14/2015,UK,,
+Celery,1,lbs,1.59,Uncle Dean's,3/14/2015,UK,,
+GF English Muffins,18,oz,4.39,Uncle Dean's,3/14/2015,UK,,
+Fish Oil Pills,250,pieces,13.99,Whole Foods,3/14/2015,UK,,
+Vitamin D3 2000 IU,250,pieces,12.99,Whole Foods,3/14/2015,UK,,
+Yellow Onions,5,lbs,2.99,Whole Foods,3/14/2015,UK,,
+Miso,1,lbs,8.99,Whole Foods,3/14/2015,UK,,
+Sweet Potato,2.73,lbs,6.8,Whole Foods,3/14/2015,UK,,
+Collard Greens,1.09,lbs,3.26,Whole Foods,3/14/2015,UK,,
+Organic Kale,1.19,lbs,2.96,Whole Foods,3/14/2015,UK,,
+Organic Radishes,0.5,lbs,1.99,Whole Foods,3/14/2015,UK,,
+Summer Squash,1.62,lbs,4.03,Whole Foods,3/14/2015,UK,,
+Garlic,0.32,lbs,1.28,Whole Foods,3/14/2015,UK,,
+Crimini Mushrooms,0.62,lbs,3.09,Whole Foods,3/14/2015,UK,,
+Corn Flakes,26.4,oz,4.99,Uncle Dean's,3/14/2015,UK,,
+Celery,1,lbs,1.59,Uncle Dean's,3/14/2015,UK,,
+GF English Muffins,18,oz,4.39,Uncle Dean's,3/14/2015,UK,,
+Apple Sauce,23,oz,1.99,Hannaford,3/15/2015,UK,,
+Chili Sauce,0.5,lbs,2.39,Hannaford,3/15/2015,UK,,
+Canned Kidney Beans,31,oz,1.58,Hannaford,3/15/2015,UK,,
+Canned Black Beans,31,oz,1.58,Hannaford,3/15/2015,UK,,
+Canned Garbanzo Beans,31,oz,1.58,Hannaford,3/15/2015,UK,,
+Canned White Beans,31,oz,1.58,Hannaford,3/15/2015,UK,,
+Canned Cannelini Beans,31,oz,1.58,Hannaford,3/15/2015,UK,,
+Hot Sauce,5,fluid oz,3.49,Hannaford,3/15/2015,UK,,
+Diced Tomatoes,28,oz,1.29,Hannaford,3/15/2015,UK,,
+Crushed Tomatoes,28,oz,1.29,Hannaford,3/15/2015,UK,,
+Cheddar Cheese,2,lbs,9.99,Hannaford,3/15/2015,UK,,
+Yogurt,17.6,oz,3.69,Hannaford,3/15/2015,UK,,
+GF Bread,18,oz,4.99,Hannaford,3/15/2015,UK,,
+Apples,3,lbs,3.79,Hannaford,3/15/2015,UK,,
+GF Pizza Dough,1,lbs,2.59,Hannaford,3/19/2015,UK,,
+Pizza Dough,20,oz,2.39,Hannaford,3/19/2015,UK,,
+Seltzer Water,1,liters,0.75,Hannaford,3/19/2015,UK,,
+Seltzer Water,1,liters,0.75,Hannaford,3/19/2015,UK,,
+Organic Bananas,2.27,lbs,1.11,Hannaford,3/19/2015,UK,,
+Shiitake Mushrooms,8,oz,3.99,Hannaford,3/19/2015,UK,,
+Toothpaste,11,oz,6.36,Other,3/20/2015,UK,,
+Bedtime Tea,16,pieces,2.69,Vitacost,3/20/2015,UK,,
+Extra Virgin Coconut Oil,54,fluid oz,23.99,Vitacost,3/20/2015,UK,,
+Ginkgo Tea,16,pieces,2.88,Vitacost,3/20/2015,UK,,
+Woman's Energy Tea,16,pieces,2.88,Vitacost,3/20/2015,UK,,
+Echinacea Tea,16,pieces,2.88,Vitacost,3/20/2015,UK,,
+Breathe Deep Tea,16,pieces,2.88,Vitacost,3/20/2015,UK,,
+Green Tea,100,pieces,6.09,Vitacost,3/20/2015,UK,,
+Bronner's Organic Lavender Liquid Soap,32,fluid oz,16.19,Vitacost,3/20/2015,UK,,
+B Vitamins,240,pieces,20.49,Vitacost,3/20/2015,UK,,
+B Vitamins,240,pieces,20.49,Vitacost,3/20/2015,UK,,
+White Vinegar,128,fluid oz,2.79,Hannaford,3/24/2015,UK,,
+Coconutmilk,54,fluid oz,2.99,Hannaford,3/24/2015,UK,,
+Peanut Butter,4.11,lbs,9.41,Uncle Dean's,3/24/2015,UK,,
+Tapioca Flour,1.59,lbs,3.48,Uncle Dean's,3/24/2015,UK,,
+Guacamole,8,oz,3.49,Hannaford,3/24/2015,UK,,
+Coconut Milk,27,fluid oz,3.78,Hannaford,3/24/2015,UK,,
+Yogurt,2,lbs,3.99,Hannaford,3/24/2015,UK,,
+Unsalted Butter,1,lbs,3.49,Hannaford,3/24/2015,UK,,
+Eggs,12,pieces,3.59,Hannaford,3/24/2015,UK,,
+GF Bread,18,oz,4.99,Hannaford,3/24/2015,UK,,
+Avocado,18,oz,5.94,Hannaford,3/24/2015,UK,,
+Apples,3,lbs,3.79,Hannaford,3/24/2015,UK,,
+kale and spinach juicing greens,11,oz,3.99,Hannaford,3/24/2015,UK,,
+Canned Wild Tuna,10,oz,6.58,Hannaford,3/27/2015,UK,,
+Ice Cream,16,fluid oz,4.99,Hannaford,3/27/2015,UK,,
+Salmon Burgers,12.8,oz,6.69,Hannaford,3/27/2015,UK,,
+Cucumbers,1,pieces,0.69,Hannaford,3/27/2015,UK,,
+Brussel Sprouts,0.77,lbs,3.07,Hannaford,3/27/2015,UK,,
+Chinese Cabbage,2.7,lbs,5.37,Hannaford,3/27/2015,UK,,
+Pizza Dough,20,oz,2.39,Hannaford,4/16/2015,UK,,
+GF Pizza Dough,16,oz,2.59,Hannaford,4/16/2015,UK,,
+Goya Maria Cookie,7,oz,0.89,Hannaford,4/16/2015,UK,,
+Canned Great Northern Beans,31,oz,1.58,Hannaford,4/16/2015,UK,,
+Canned Pinto Beans,31,oz,1.58,Hannaford,4/16/2015,UK,,
