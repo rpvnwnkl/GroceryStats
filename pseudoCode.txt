@@ -1,0 +1,8 @@
+create a dict grouping all similar items by name
+maybe if more than two words are the same or something
+if like food items don't have category and type filled in, copy them from similarly grouped food items
+Maybe start by grouping food items by category and type and printing them out to see range of entries
+save as a new file
+Create a new file which assembles the food items, or a file for the cleaner functions, but that imports the food item assembler
+
+* Put read and write inside grocery object class as methods
