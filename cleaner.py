@@ -1,84 +1,91 @@
+#!/usr/bin/env python
+from assembler import *
+import time
 import csv
-##this function opens the spreadsheet and writes it as a dict to the foodList variable
-fileName='foodList_x.csv'
+from matplotlib import pyplot
+import numpy
+
+''' reads and re-interprets time sample '''
+steve = time.strptime("30Nov2000", "%d%b%Y")
+print ''.join(str([steve[2], steve[1], steve[0]]))
+newSteve = time.strftime('%d%b%Y', steve)
+print newSteve
+
+fileName='./foodList_x.csv'
+
 def readfile(fileName):
     with open(fileName, 'rb') as csvfile:
+        print 'opened '+fileName
         foodList = csv.DictReader(csvfile, delimiter = ',', quotechar = '"')
         tmpList = []
         for row in foodList:
             tmpList.append(row)
+            ##print row
+    for item in tmpList:
+        if '/' in item['Date']:
+            if len(item['Date'].split('/')[0]) == 1:
+##                print 'fired'
+                item['Date']=''.join(('0', item['Date']))
+            item['Date'] = time.strftime('%d%b%Y', time.strptime(item['Date'],'%m/%d/%Y'))
     return tmpList
-##this is a function using object methods to change food category values            
-def nameChange(oldName, newName, category, food):
-    food.changeName(category, oldName, newName)
-    
-##this object holds all the food 'Item' objects
-class Groceries(object):
-    def __init__(self, foodList):
-        ##creates food object list and puts the Item objects inside row by row
-        self.foodObjects = list((Item(row) for row in foodList))
-    def getFood(self):
-        return self.foodObjects
-    def __str__(self):
-        return self.foodObjects
-    def changeName(self, category, oldName, newName):
-        for item in self.getFood():
-            if item.sameName(oldName, category):
-                item.nameChange(newName, category)
-                print oldName+'-->'+newName
-        for item in self.getFood():
-            if item.sameName(oldName, category):
-                print 'found one not fixed'
-    def sellerList(self):
-        ##searches through dict and pulls unique names and returns them in a list
-        tmpList = []
-        for item in self.foodObjects:
-            if item.getSeller() not in tmpList:
-                tmpList.append(item.getSeller())
-        tmpList.sort()
-        return tmpList
 
-    
-##A class is created for food items, which are denoted by each row of the food dictionary
-class Item(Groceries):
-    def __init__(self, row): ##init local food dict
-        self.rowDict = row ##saves the dict format
-        self.cats = self.rowDict.keys()##categories are just the dict keys
-    def getDict(self):
-        return self.rowDict
-    def getSeller(self):
-        return self.rowDict['Seller']
-            
-    def __str__(self): ##returns item as a Dict
-        return str(self.rowDict.items())
-    def __repr__(self):##returns food item object as key, value pairs
-        return self.rowDict
 
-    def getCats(self): ##returns list of keys as food categories
-        return self.cats
+'''creates food object from spreadsheet file '''   
+tmpFood = readfile(fileName)
+##print tmpFood
+food = Groceries(tmpFood)
+##print food
 
-    def nameChange(self, newName, category): ##changes value of given key in food dict
-        self.rowDict[category] = newName
-        
-    def sameName(self, oldName, category): ##check to see if name is the same
-        return self.rowDict[category] == oldName
+'''three name changes to fix seller info in original document'''
+##food.changeName('Hannafords', 'Hannaford', 'Seller')
+##food.changeName('Uncle Deans', "Uncle Dean's", 'Seller')
+##food.changeName('Trader Joes', "Trader Joe's", 'Seller')
 
-##creates 'food' object from spreadsheet file    
-food = Groceries(readfile(fileName))    
+'''prints out list of unique sellers'''
+##for item in food.sellerList():
+##    print item
 
-##three name changes to fix seller info in original document
-nameChange('Hannafords', 'Hannaford', 'Seller', food)
-nameChange('Uncle Deans', "Uncle Dean's", 'Seller', food)
-nameChange('Trader Joes', "Trader Joe's", 'Seller', food)
-
-##prints out list of unique sellers
-for item in food.sellerList():
-    print item
-
-##writes food object to file 
-with open('foodList_x.csv', 'w') as csvfile:
-    fieldnames = ['Name', 'Amount', 'Measure', 'Cost', 'Seller', 'Date', 'Buyer', 'Category', 'Type']
-    writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
-    writer.writeheader()
+def straightPlot():
+    dateArray = []
+    costArray = []
+    unsortedFood = []
+    wDayArray = {}
     for item in food.getFood():
-        writer.writerow(item.getDict())
+        unsortedFood += (item.pDate()[7], item.itemCost())
+        pyplot.figure(1)
+        x, y = float(item.getDict()['Date'][7]), float(item.getDict()['Cost'])
+        z = item.wDay()
+        pyplot.plot(x, y, '-ro')
+        dateArray.append(x)
+        costArray.append(y)
+        if z in wDayArray.keys():
+            wDayArray[z].append(y)
+        else:
+            wDayArray[z] = [y]
+            
+    '''broken here, trying to sort the unsorted tuple list'''
+    sortedFood = sorted(unsortedFood, x[0])
+    
+    for x in wDayArray:
+        wDayArray[x] = numpy.mean(wDayArray[x])
+    pyplot.figure(2)
+    pyplot.bar(dateArray, costArray)
+    sortedX = [x[0] for x in sortedFood]
+    sortedY = [y[1] for y in sortedFood]
+    coefficients = numpy.polyfit(sortedX, sortedY, 3)
+    polynomial = numpy.poly1d(coefficients)
+    ys = polynomial(dateArray)
+    pyplot.plot(dateArray, ys, '-ro')
+    pyplot.title('Year Day versus Cost')
+    pyplot.figure(4)
+    for x in wDayArray.keys():
+        pyplot.bar(x, wDayArray[x])
+    pyplot.title('Weekday versus average Cost')
+    pyplot.figure(3)
+    pyplot.hist(costArray, len(dateArray))
+    pyplot.title('frequency of daily purchase amounts')
+    pyplot.show()
+    
+straightPlot()
+    
+##saveIt('foodList_a.csv')

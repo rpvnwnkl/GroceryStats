@@ -1,0 +1,7 @@
+have split the assembly and operations files and they are now working 
+Wed Jul  1 16:12:40 EDT 2015
+* need to figure out how to make date/time readable in order to build plots
+'''
+Wed Jul  1 16:13:52 EDT 2015
+'''
+
