@@ -70,6 +70,8 @@ class Item(Groceries):
         self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
     def pDate(self):
         return self.rowDict['Date']
+    def yDay(self):
+        return self.pDate()[7]
     def wDay(self):
         return self.pDate()[6]
     def itemCost(self):

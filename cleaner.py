@@ -50,11 +50,13 @@ def straightPlot():
     costArray = []
     unsortedFood = []
     wDayArray = {}
+    yDayArray = {}
     for item in food.getFood():
-        unsortedFood += (item.pDate()[7], item.itemCost())
+##        unsortedFood += (item.pDate()[7], item.itemCost())
         pyplot.figure(1)
         x, y = float(item.getDict()['Date'][7]), float(item.getDict()['Cost'])
         z = item.wDay()
+        yd = item.yDay()
         pyplot.plot(x, y, '-ro')
         dateArray.append(x)
         costArray.append(y)
@@ -62,25 +64,33 @@ def straightPlot():
             wDayArray[z].append(y)
         else:
             wDayArray[z] = [y]
+        if yd in yDayArray.keys():
+            yDayArray[yd] += y
+        else:
+            yDayArray[yd] = y
             
     '''broken here, trying to sort the unsorted tuple list'''
-    sortedFood = sorted(unsortedFood, x[0])
+##    sortedFood = sorted(unsortedFood, x[0])
     
     for x in wDayArray:
-        wDayArray[x] = numpy.mean(wDayArray[x])
-    pyplot.figure(2)
-    pyplot.bar(dateArray, costArray)
-    sortedX = [x[0] for x in sortedFood]
-    sortedY = [y[1] for y in sortedFood]
-    coefficients = numpy.polyfit(sortedX, sortedY, 3)
-    polynomial = numpy.poly1d(coefficients)
-    ys = polynomial(dateArray)
-    pyplot.plot(dateArray, ys, '-ro')
+        wDayArray[x] = sum(wDayArray[x])
+    pyplot.figure(5)
+    for (k, v) in sorted(yDayArray.items()):
+        pyplot.bar(k, v)
+##    pyplot.figure(2)
+##    sortedX = [x[0] for x in sortedFood]
+##    sortedY = [y[1] for y in sortedFood]
+##    coefficients = numpy.polyfit(sortedX, sortedY, 3)
+##    polynomial = numpy.poly1d(coefficients)
+##    ys = polynomial(dateArray)
+##    pyplot.plot(dateArray, ys, '-ro')
     pyplot.title('Year Day versus Cost')
+    
     pyplot.figure(4)
     for x in wDayArray.keys():
         pyplot.bar(x, wDayArray[x])
     pyplot.title('Weekday versus average Cost')
+    
     pyplot.figure(3)
     pyplot.hist(costArray, len(dateArray))
     pyplot.title('frequency of daily purchase amounts')
