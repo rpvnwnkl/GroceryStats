@@ -15,7 +15,7 @@ class Groceries(object):
 
     def __init__(self, foodList):
         ''' given a foodList Dict this creates food objects using Item class and collects them in a list '''
-        self.foodObjects = list((Item(row) for row in foodList))
+        self.foodObjects = list((Item(row) for row in foodList if row['Category'] == 'Grocery'))
         self.Dates = []
         self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
         print 'foodObjects made'
@@ -30,10 +30,10 @@ class Groceries(object):
         for item in self.foodObjects:
                 ret_str += "".join(str(item))
         return ret_str
-        ##return list(str(item) for item in self.foodObjects)
 
     def changeName(self, oldName, newName, category):
-        ''' given the category, the existing name str, and the desired name str, will go through foodObject list and change as necessary '''
+        ''' given the category, the existing name str, and the
+            desired name str, will go through foodObject list and change as necessary '''
         for item in self.getFood():
             if item.sameName(oldName, category):
                 item.nameChange(newName, category)
@@ -43,16 +43,15 @@ class Groceries(object):
                 print 'found one not fixed'
 
     def sellerList(self):
-        '''searches through list of food Item objects and pulls unique 'Seller' names and returns them in a list'''
+        '''searches through list of food Item objects and
+            pulls unique 'Seller' names and returns them in a list'''
         tmpList = []
         for item in self.foodObjects:
             if item.getSeller() not in tmpList:
                 tmpList.append(item.getSeller())
         tmpList.sort()
         return tmpList
-##    def checkUnits(self):
-##        ''' groups similar items and outputs their different units and measures as a list (unit, measure)'''
-##        pass
+
     def getDates(self):
         return self.Dates
     #this is a function using object methods to change food category values            
@@ -74,8 +73,12 @@ class Item(Groceries):
         return self.pDate()[7]
     def wDay(self):
         return self.pDate()[6]
+    def yMonth(self):
+        return self.pDate()[1]
     def itemCost(self):
         return float(self.rowDict['Cost'])
+    def getName(self):
+        return self.rowDict['Name']
     def getDict(self):
         return self.rowDict
     def getSeller(self):
@@ -94,14 +97,25 @@ class Item(Groceries):
         
     def sameName(self, oldName, category): ##check to see if name is the same
         return self.rowDict[category] == oldName
+    def save(self, filename):
+        '''saves object as a csv file named as filename.
+            filename can be any type but will be read as type string'''
+        fileName = str(fileName) 
+        with open(fileName, 'w') as csvfile:
+            fieldnames = ['Name', 'Amount', 'Measure', 'Cost', 'Seller', 'Date', 'Buyer', 'Category', 'Type']
+            writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
+            writer.writeheader()
+            for item in foodObject.getFood():
+                writer.writerow(item.getDict())
+        print 'foodObject saved as '+fileName+'!'
 def foodPlot():
     pass
-def saveIt(fileName):
+def saveIt(fileName, foodObject):
     '''writes food object to file, fileName should be str'''
     fileName = str(fileName) 
     with open(fileName, 'w') as csvfile:
         fieldnames = ['Name', 'Amount', 'Measure', 'Cost', 'Seller', 'Date', 'Buyer', 'Category', 'Type']
         writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
         writer.writeheader()
-        for item in food.getFood():
+        for item in foodObject.getFood():
             writer.writerow(item.getDict())
