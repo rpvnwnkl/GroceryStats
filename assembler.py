@@ -1,16 +1,23 @@
 import time
 import csv
-##def readfile(fileName):
-##    with open(fileName, 'rb') as csvfile:
+
+def readfile(fileName):
+    with open(fileName, 'rb') as csvfile:
 ##        print 'opened '+fileName
-##        foodList = csv.DictReader(csvfile, delimiter = ',', quotechar = '"')
-##        tmpList = []
-##        for row in foodList:
-##            tmpList.append(row)
-##            print row
-##    return tmpList
-    
-##this object holds all the food 'Item' objects
+        foodList = csv.DictReader(csvfile, delimiter = ',', quotechar = '"')
+        tmpList = []
+        for row in foodList:
+            tmpList.append(row)
+            ##print row
+    for item in tmpList:
+        if '/' in item['Date']:
+            if len(item['Date'].split('/')[0]) == 1:
+##                print 'fired'
+                item['Date']=''.join(('0', item['Date']))
+            item['Date'] = time.strftime('%d%b%Y', time.strptime(item['Date'],'%m/%d/%Y'))
+        if item['Category'] == '':
+            print 'no Category on '+item
+    return tmpList
 class Groceries(object):
 
     def __init__(self, foodList):
@@ -19,7 +26,7 @@ class Groceries(object):
         self.foodDicts = foodList
         self.Dates = []
         self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
-        print 'foodObjects made'
+##        print 'foodObjects made'
         
     def getFood(self):
         ''' returns list of food Item objects '''
@@ -32,7 +39,10 @@ class Groceries(object):
         for item in self.foodObjects:
                 ret_str += "".join(str(item))
         return ret_str
-
+    def __repr__(self):
+        return self.foodObjects
+    def __iter__(self):
+        return iter(self.foodObjects)
     def changeName(self, oldName, newName, category):
         ''' given the category, the existing name str, and the
             desired name str, will go through foodObject list and change as necessary '''
@@ -67,16 +77,20 @@ class Groceries(object):
             writer.writeheader()
             for item in self.getFood():
                 writer.writerow(item.getRowDict())
-        print 'foodObject saved as '+fileName+'!'
+##        print 'foodObject saved as '+fileName+'!'
     
 
 ##A class is created for food items, which are denoted by each row of the food dictionary
 class Item(Groceries):
     def __init__(self, row): ##init local food dict
         self.rowDict = row ##saves the dict format
-        self.cats = self.rowDict.keys()##categories are just the dict keys
+        self.cats = list(self.rowDict.keys())##categories are just the dict keys
 ##        print self.rowDict['Date']
 ##        self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
+        for x in self.cats:
+            self.x = self.rowDict[x]
+##            print x
+##            print self.x
     def pDate(self):
         return time.strptime(self.rowDict['Date'], "%d%b%Y")
     def yDay(self):
@@ -95,9 +109,11 @@ class Item(Groceries):
         return self.rowDict['Seller']
             
     def __str__(self): ##returns item as a Dict
-        return str(self.rowDict.items())
+        return str(self.rowDict)
     def __repr__(self):##returns food item object as key, value pairs
-        return self.rowDict
+        return self.rowDict.items()
+    def __iter__(self):
+        return iter(self.rowDict)
 
     def getCats(self): ##returns list of keys as food categories
         return self.cats
