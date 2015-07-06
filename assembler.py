@@ -54,10 +54,18 @@ class Groceries(object):
 
     def getDates(self):
         return self.Dates
-    #this is a function using object methods to change food category values            
-    def nameChange(self, oldName, newName, category):
     
-        self.changeName(category, oldName, newName)
+    def save(self, filename):
+        '''saves object as a csv file named as filename.
+            filename can be any type but will be read as type string'''
+        fileName = str(fileName) 
+        with open(fileName, 'w') as csvfile:
+            fieldnames = ['Name', 'Amount', 'Measure', 'Cost', 'Seller', 'Date', 'Buyer', 'Category', 'Type']
+            writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
+            writer.writeheader()
+            for item in foodObject.getFood():
+                writer.writerow(item.getDict())
+        print 'foodObject saved as '+fileName+'!'
     
 
 ##A class is created for food items, which are denoted by each row of the food dictionary
@@ -97,17 +105,7 @@ class Item(Groceries):
         
     def sameName(self, oldName, category): ##check to see if name is the same
         return self.rowDict[category] == oldName
-    def save(self, filename):
-        '''saves object as a csv file named as filename.
-            filename can be any type but will be read as type string'''
-        fileName = str(fileName) 
-        with open(fileName, 'w') as csvfile:
-            fieldnames = ['Name', 'Amount', 'Measure', 'Cost', 'Seller', 'Date', 'Buyer', 'Category', 'Type']
-            writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
-            writer.writeheader()
-            for item in foodObject.getFood():
-                writer.writerow(item.getDict())
-        print 'foodObject saved as '+fileName+'!'
+    
 def foodPlot():
     pass
 def saveIt(fileName, foodObject):
