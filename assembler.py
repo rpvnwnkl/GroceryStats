@@ -1,5 +1,5 @@
 import time
-##import csv
+import csv
 ##def readfile(fileName):
 ##    with open(fileName, 'rb') as csvfile:
 ##        print 'opened '+fileName
@@ -55,7 +55,7 @@ class Groceries(object):
     def getDates(self):
         return self.Dates
     
-    def save(self, filename):
+    def save(self, fileName):
         '''saves object as a csv file named as filename.
             filename can be any type but will be read as type string'''
         fileName = str(fileName) 
@@ -63,8 +63,8 @@ class Groceries(object):
             fieldnames = ['Name', 'Amount', 'Measure', 'Cost', 'Seller', 'Date', 'Buyer', 'Category', 'Type']
             writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
             writer.writeheader()
-            for item in foodObject.getFood():
-                writer.writerow(item.getDict())
+            for item in self.getFood():
+                writer.writerow(item.getRowDict())
         print 'foodObject saved as '+fileName+'!'
     
 
@@ -74,7 +74,7 @@ class Item(Groceries):
         self.rowDict = row ##saves the dict format
         self.cats = self.rowDict.keys()##categories are just the dict keys
 ##        print self.rowDict['Date']
-        self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
+##        self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
     def pDate(self):
         return self.rowDict['Date']
     def yDay(self):
@@ -87,7 +87,7 @@ class Item(Groceries):
         return float(self.rowDict['Cost'])
     def getName(self):
         return self.rowDict['Name']
-    def getDict(self):
+    def getRowDict(self):
         return self.rowDict
     def getSeller(self):
         return self.rowDict['Seller']
@@ -101,7 +101,7 @@ class Item(Groceries):
         return self.cats
 
     def nameChange(self, newName, category): ##changes value of given key in food dict
-        self.rowDict[category] = newName
+        self.rowDict[category] = newName    
         
     def sameName(self, oldName, category): ##check to see if name is the same
         return self.rowDict[category] == oldName
