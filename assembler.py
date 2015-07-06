@@ -16,6 +16,7 @@ class Groceries(object):
     def __init__(self, foodList):
         ''' given a foodList Dict this creates food objects using Item class and collects them in a list '''
         self.foodObjects = list((Item(row) for row in foodList if row['Category'] == 'Grocery'))
+        self.foodDicts = foodList
         self.Dates = []
         self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
         print 'foodObjects made'
@@ -23,7 +24,8 @@ class Groceries(object):
     def getFood(self):
         ''' returns list of food Item objects '''
         return self.foodObjects
-
+    def getFoodDicts(self):
+        return self.foodDicts
     def __str__(self):
         ''' identifies itself as a list of food Item dicts, relies on Item str methods for clarity '''
         ret_str = ""
@@ -76,7 +78,7 @@ class Item(Groceries):
 ##        print self.rowDict['Date']
 ##        self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
     def pDate(self):
-        return self.rowDict['Date']
+        return time.strptime(self.rowDict['Date'], "%d%b%Y")
     def yDay(self):
         return self.pDate()[7]
     def wDay(self):

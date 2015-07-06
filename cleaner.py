@@ -27,14 +27,17 @@ def readfile(fileName):
 ##                print 'fired'
                 item['Date']=''.join(('0', item['Date']))
             item['Date'] = time.strftime('%d%b%Y', time.strptime(item['Date'],'%m/%d/%Y'))
+        if item['Category'] == '':
+            print 'no Category on '+item
     return tmpList
 
 
-'''creates food object from spreadsheet file '''   
+'''creates food object from spreadsheet file'''
 tmpFood = readfile(fileName)
-##print tmpFood
 food = Groceries(tmpFood)
-##print food
+'''save to new file to reflect changes in values''' 
+food.save('foodList_x_test.csv')
+
 
 '''three name changes to fix seller info in original document'''
 ##food.changeName('Hannafords', 'Hannaford', 'Seller')
@@ -44,7 +47,7 @@ food = Groceries(tmpFood)
 '''prints out list of unique sellers'''
 ##for item in food.sellerList():
 ##    print item
-
+'''
 def straightPlot():
     dateArray = []
     costArray = []
@@ -68,8 +71,7 @@ def straightPlot():
             yDayArray[yd] += y
         else:
             yDayArray[yd] = y
-            
-    '''broken here, trying to sort the unsorted tuple list'''
+           
 ##    sortedFood = sorted(unsortedFood, x[0])
     
     for x in wDayArray:
@@ -95,7 +97,49 @@ def straightPlot():
     pyplot.hist(costArray, len(dateArray))
     pyplot.title('frequency of daily purchase amounts')
     pyplot.show()
+    '''
+class Stats(object):
     
-straightPlot()
+    def monthlyTotal(self, beg=1, end=12):
+        '''returns dict of monthly totals and list of months'''
+        firstMonth = time.strftime("%B", time.strptime(str(beg), "%m"))
+        print firstMonth
+        print beg
+        lastMonth = time.strftime("%B", time.strptime(str(end), "%m"))
+        print lastMonth
+        print end
+        monthTotals = {}
+        for item in food.getFood():
+            tmpMonth = item.yMonth()
+##            print tmpMonth
+            if tmpMonth in range(beg, end+1):
+##                print True
+                if tmpMonth in monthTotals.keys():
+##                    print 'adding '+str(item.itemCost())+' to total'
+                    monthTotals[tmpMonth] += item.itemCost()
+                else:
+                    monthTotals[tmpMonth] = item.itemCost()
+        print monthTotals
+        
+        for key in sorted(monthTotals.keys()):
+            print time.strftime("%b", time.strptime(str(key), "%m"))+': $'+str(monthTotals[key])
+        return monthTotals
+     
+facts = Stats()
+print facts.monthlyTotal(1, 6)
+
+def monthlyGroup():
+    months = {}
+    for item in food.getFood():
+        tmpMonth = item.yMonth()
+        if tmpMonth in months.keys():
+            months[tmpMonth].append(item)
+        else:
+            months[tmpMonth] = [item]
+    return months
+##tmp = monthlyGroup()
+##for x in tmp.keys():
+##    for y in tmp[x]:
+##        print str(x)+': '+y.getName()
     
 ##saveIt('foodList_a.csv')
