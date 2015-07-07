@@ -11,13 +11,13 @@ import numpy
 ##newSteve = time.strftime('%d%b%Y', steve)
 ##print newSteve
 
-fileName='./foodList_x.csv'
+fileName='./foodList_x_test.csv'
 
 '''creates food object from spreadsheet file'''
 tmpFood = readfile(fileName)
 food = Groceries(tmpFood)
 '''save to new file to reflect changes in values'''
-food.save('foodList_x_test.csv')
+food.save('foodList_x1_test.csv')
 
 
 '''three name changes to fix seller info in original document'''
@@ -84,17 +84,21 @@ class Stats(object):
         self.Queue = selfObject
 
     def monthlyTotal(self, beg=1, end=12):
-        '''returns dict of monthly totals and list of months'''
+        '''returns dict of monthly totals'''
         firstMonth = time.strftime("%B", time.strptime(str(beg), "%m"))
         lastMonth = time.strftime("%B", time.strptime(str(end), "%m"))
         monthTotals = {}
         for item in self.Queue:
-            tmpMonth = item.yMonth()
+            tmpMonth = item.Month()
             if tmpMonth in range(beg, end+1):
                 if tmpMonth in monthTotals.keys():
                     monthTotals[tmpMonth] += item.itemCost()
                 else:
                     monthTotals[tmpMonth] = item.itemCost()
+                    
+        monthlyAVG = numpy.mean([monthTotals[x] for x in monthTotals])
+        print 'Monthly average purchase amount from {} through {} is: {}'.format( firstMonth, lastMonth, str(monthlyAVG))
+        
         print 'Monthly totals for months '+firstMonth+' through '+lastMonth+'.'
         for key in sorted(monthTotals.keys()):
             print time.strftime("%b", time.strptime(str(key), "%m"))+': $'+str(monthTotals[key])
@@ -111,22 +115,43 @@ class Stats(object):
             itemVal = item.getRowDict()
             itemType = itemVal['Type']
             itemCost = float(itemVal['Cost'])
-            tmpMonth = item.yMonth()
-            if tmpMonth in range(beg, end+1):
-                if tmpMonth in allMonths.keys():
-                    if itemType in allMonths[tmpMonth]:
-                        allMonths[tmpMonth][itemType] += itemCost
+            tmpMonth = item.Month()
+            if tmpMonth in range(beg, end+1):##check if in desired range
+                if tmpMonth in allMonths.keys(): ##check if month already in dict
+                    if itemType in allMonths[tmpMonth]:##check if type is in month dict
+                        allMonths[tmpMonth][itemType] += itemCost ##add cost to type value in month dict
                     else:
-                        allMonths[tmpMonth][itemType] = itemCost
+                        allMonths[tmpMonth][itemType] = itemCost ##if not add it as origin value
                 else:                    
-                    allMonths[tmpMonth] = {itemType: itemCost}
+                    allMonths[tmpMonth] = {itemType: itemCost} ##add month and add initial dict value
+                    
+##        print 'Category totals for each month '+firstMonth+' through '+lastMonth+'.'
+##        for key in sorted(allMonths):
+##            print time.strftime("%b", time.strptime(str(key), "%m"))+':'
+##            for itemtype in sorted(allMonths[key]):
+##                print itemtype+': $'+str(allMonths[key][itemtype])
+##            print '\n'
         print 'Category totals for each month '+firstMonth+' through '+lastMonth+'.'
+
+        '''converting dict to list of lists'''
+        allInList = []
         for key in sorted(allMonths):
-            print time.strftime("%b", time.strptime(str(key), "%m"))+':'
-            for itemtype in sorted(allMonths[key]):
-                print itemtype+': $'+str(allMonths[key][itemtype])
+            monthList = []
+            for item in allMonths[key]:
+                monthList.append((item, allMonths[key][item]))
+            '''orders tuples by value size'''
+            allInList.append(sorted(monthList, key=lambda cost: cost[1], reverse=True))
+            
+        '''proceeds through and prints the list month by month'''
+        currentMonth = beg
+        for month in allInList:
+            print time.strftime("%b", time.strptime(str(currentMonth), "%m"))+':'
+            currentMonth += 1
+            for catVal in month:
+                print catVal[0]+': $'+str(catVal[1])
             print '\n'
-        return allMonths
+            
+        return allInList
 facts = Stats(food)
 facts.monthlyTotal(1, 6)
 facts.typeTotals(1, 6)

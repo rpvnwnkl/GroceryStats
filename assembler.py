@@ -18,14 +18,15 @@ def readfile(fileName):
         if item['Category'] == '':
             print 'no Category on '+item
     return tmpList
+
 class Groceries(object):
 
     def __init__(self, foodList):
         ''' given a foodList Dict this creates food objects using Item class and collects them in a list '''
         self.foodObjects = list((Item(row) for row in foodList if row['Category'] == 'Grocery'))
         self.foodDicts = foodList
-        self.Dates = []
-        self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
+##        self.Dates = []
+##        self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
 ##        print 'foodObjects made'
         
     def getFood(self):
@@ -87,18 +88,14 @@ class Item(Groceries):
         self.cats = list(self.rowDict.keys())##categories are just the dict keys
 ##        print self.rowDict['Date']
 ##        self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
-        for x in self.cats:
-            self.x = self.rowDict[x]
+        for x in row.keys():
 ##            print x
-##            print self.x
-    def pDate(self):
-        return time.strptime(self.rowDict['Date'], "%d%b%Y")
-    def yDay(self):
-        return self.pDate()[7]
-    def wDay(self):
-        return self.pDate()[6]
-    def yMonth(self):
-        return self.pDate()[1]
+            setattr(self, x, row[x])
+##            print getattr(self, x)
+    def Date(self):
+        return time.strptime(self.Date, "%d%b%Y")
+    def Month(self):
+        return int(time.strftime('%m', time.strptime(self.Date, "%d%b%Y")))
     def itemCost(self):
         return float(self.rowDict['Cost'])
     def getName(self):
@@ -123,7 +120,7 @@ class Item(Groceries):
         
     def sameName(self, oldName, category): ##check to see if name is the same
         return self.rowDict[category] == oldName
-    
+
 def foodPlot():
     pass
 def saveIt(fileName, foodObject):
