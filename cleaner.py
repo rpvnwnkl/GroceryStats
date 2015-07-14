@@ -6,8 +6,8 @@ import numpy
 fileName='./foodList_x_test.csv'
 
 '''creates food object from spreadsheet file'''
-tmpFood = readfile(fileName)
-food = Groceries(tmpFood)
+##tmpFood = readfile(fileName)
+food = Groceries()
 '''save to new file to reflect changes in values'''
 food.save('foodList_x1_test.csv')
 
@@ -45,9 +45,29 @@ class Stats(object):
         for key in sorted(monthTotals.keys()):
             print time.strftime("%b", time.strptime(str(key), "%m"))+': $'+str(monthTotals[key])
         print '\n'
-        return monthTotals
-    
+        return (monthTotals, monthlyAVG)
+
+    def monthlyPercentChange(self, beg=1, end=12):
+	'''returns dict of percent change from one month to the next'''
+	firstMonth = time.strftime("%B", time.strptime(str(beg), "%m"))
+        lastMonth = time.strftime("%B", time.strptime(str(end), "%m"))
+	months = []
+	sums = []
+	monthsInfo, monthAVG = self.monthlyTotal(beg, end)
+	for k, v in sorted(monthsInfo.items()):
+		months.append(k)
+		sums.append(v)
+	diffs = []
+	for val in sums:
+		diffs.append((100*(val/monthAVG))-100)
+	print diffs
+	print 'Monthly Percent Difference Between Total Purchase Amount and Monthly Averages Over Time Period '+firstMonth+' to '+lastMonth+':'
+	for x in range(len(sums)):
+    	    print time.strftime("%b", time.strptime(str(months[x]), "%m"))+': '+"{0:.2f}".format(diffs[x])+'%'
+
     def typeTotals(self, beg, end):
+
+
         '''returns dict of category totals per month'''
          
         firstMonth = time.strftime("%B", time.strptime(str(beg), "%m"))
@@ -91,6 +111,7 @@ class Stats(object):
 facts = Stats(food)
 facts.monthlyTotal(1, 6)
 facts.typeTotals(1, 6)
+facts.monthlyPercentChange(1, 6)
 def monthlyGroup():
     months = {}
     for item in food.getFood():

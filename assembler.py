@@ -1,5 +1,6 @@
 import time
 import csv
+import os
 
 def readfile(fileName):
     with open(fileName, 'rb') as csvfile:
@@ -21,14 +22,18 @@ def readfile(fileName):
 
 class Groceries(object):
 
-    def __init__(self, foodList):
+    def __init__(self):
         ''' given a foodList Dict this creates food objects using Item class and collects them in a list '''
-        self.foodObjects = list((Item(row) for row in foodList if row['Category'] == 'Grocery'))
-        self.foodDicts = foodList
+	self.foodObjects = []
+	for root, dirs, files in os.walk('foodFiles/'):
+		for name in files:
+			print name
+			print root
+			tmpFood = readfile(os.path.join(root, name))
+			self.foodObjects = list((Item(row) for row in tmpFood if row['Category'] == 'Grocery'))
+##        self.foodDicts = foodList
 ##        self.Dates = []
 ##        self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
-##        print 'foodObjects made'
-        
     def getFood(self):
         ''' returns list of food Item objects '''
         return self.foodObjects
@@ -86,24 +91,30 @@ class Item(Groceries):
     def __init__(self, row): ##init local food dict
         self.rowDict = row ##saves the dict format
         self.cats = list(self.rowDict.keys())##categories are just the dict keys
-##        print self.rowDict['Date']
-##        self.rowDict['Date'] = time.strptime(self.rowDict['Date'], "%d%b%Y")
+##	should be:
+##		self.Name
+##		self.Amount
+##		self.Measure
+##		self.Cost
+##		self.Seller
+##		self.Date
+##		self.Buyer
+##		self.Category
+##		self.Type
         for x in row.keys():
-##            print x
             setattr(self, x, row[x])
-##            print getattr(self, x)
     def Date(self):
         return time.strptime(self.Date, "%d%b%Y")
     def Month(self):
         return int(time.strftime('%m', time.strptime(self.Date, "%d%b%Y")))
     def itemCost(self):
-        return float(self.rowDict['Cost'])
+        return float(self.Cost)
     def getName(self):
-        return self.rowDict['Name']
+        return self.Name
     def getRowDict(self):
         return self.rowDict
     def getSeller(self):
-        return self.rowDict['Seller']
+        return self.Seller
             
     def __str__(self): ##returns item as a Dict
         return str(self.rowDict)
@@ -117,7 +128,8 @@ class Item(Groceries):
 
     def nameChange(self, newName, category): ##changes value of given key in food dict
         self.rowDict[category] = newName    
-        
+        self.Category = newName
+
     def sameName(self, oldName, category): ##check to see if name is the same
         return self.rowDict[category] == oldName
 
