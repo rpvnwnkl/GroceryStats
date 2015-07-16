@@ -111,7 +111,7 @@ class Stats(object):
 facts = Stats(food)
 facts.monthlyTotal(1, 6)
 facts.typeTotals(1, 6)
-facts.monthlyPercentChange(1, 6)
+facts.monthlyPercentChange(2, 6)
 def monthlyGroup():
     months = {}
     for item in food.getFood():

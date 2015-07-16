@@ -1,0 +1,10 @@
+#Problem: 
+
+Need list, dict, something of food categories and then food names
+
+#Solution:
+Scrape Hannaford's website
+Most pages have categories
+Links may need to be executed to get actual food product names
+
+
