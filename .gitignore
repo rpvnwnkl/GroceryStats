@@ -7,3 +7,4 @@ sheet2.ods
 sheet3.ods
 assembler.pyc
 *.swp
+.gitignore~
