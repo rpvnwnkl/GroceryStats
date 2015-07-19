@@ -7,3 +7,6 @@ This is a tool to conduct analysis on our regular grocery purchases.
 Would eventually like to build a UI to call and clear plots on demand, as well as choose scope, etc. 
 
 -MM
+
+'python test_GroceryItem.py' to run unit tests 
+-MB

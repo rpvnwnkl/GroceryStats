@@ -5,4 +5,4 @@ foodList_1.xml
 sheet1.ods
 sheet2.ods
 sheet3.ods
-assembler.pyc
+*.pyc
