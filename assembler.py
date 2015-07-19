@@ -1,39 +1,14 @@
 import time
 import csv
 import os
-
-def readfile(fileName):
-    with open(fileName, 'rb') as csvfile:
-##        print 'opened '+fileName
-        foodList = csv.DictReader(csvfile, delimiter = ',', quotechar = '"')
-        tmpList = []
-        for row in foodList:
-            tmpList.append(row)
-            ##print row
-    for item in tmpList:
-        if '/' in item['Date']:
-            if len(item['Date'].split('/')[0]) == 1:
-##                print 'fired'
-                item['Date']=''.join(('0', item['Date']))
-            item['Date'] = time.strftime('%d%b%Y', time.strptime(item['Date'],'%m/%d/%Y'))
-        if item['Category'] == '':
-            print 'no Category on '+item
-    return tmpList
+from recordFood.dataInput import * 
 
 class Groceries(object):
 
     def __init__(self):
         ''' given a foodList Dict this creates food objects using Item class and collects them in a list '''
-	self.foodObjects = []
-	for root, dirs, files in os.walk('foodFiles/'):
-		for name in files:
-			print name
-			print root
-			tmpFood = readfile(os.path.join(root, name))
-			self.foodObjects = list((Item(row) for row in tmpFood if row['Category'] == 'Grocery'))
-##        self.foodDicts = foodList
-##        self.Dates = []
-##        self.Dates.append(item.pDate() for item in self.foodObjects if item.pDate() not in self.Dates)
+	tmpFood = readfile()
+	self.foodObjects = list((Item(row) for row in tmpFood if row['Category'] == 'Grocery'))
     def getFood(self):
         ''' returns list of food Item objects '''
         return self.foodObjects

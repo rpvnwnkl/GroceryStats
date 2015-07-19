@@ -8,3 +8,5 @@ sheet3.ods
 assembler.pyc
 *.swp
 .gitignore~
+*.py~
+*.md~
