@@ -20,13 +20,14 @@ print tmpInfo, tmpInfo1, tmpInfo2
 
 class MyHTMLParser(HTMLParser):
 	def handle_starttag(self, tag, attrs):
-		print 'Start tag: ', tag
-		for attr in attrs:
-			print '    attr: ', attr
+		if tag == 'id' and 'subnav' in attrs:
+			print 'Start tag: ', tag
+			for attr in attrs:
+				print '    attr: ', attr
 	def handle_endtag(self, tag):
 		print 'End tag  : ', tag
-	def handle_data(self, data):
-		print 'Data     : ', data
+	##def handle_data(self, data):
+		##print 'Data     : ', data
 	def handle_comment(self, data):
 		print 'Comment  : ', data
 	def handle_entity(self, name):
