@@ -22,6 +22,8 @@ I think it will probably be best to search the website using _depth first_ metho
 
 ####Probably can use the following libraries:
 
+__*Latest update is to use Beautiful Soup library as start*__
+
 urlparse and urljoin to extract and then execute urls in the page:
 * https://docs.python.org/2/library/urlparse.html#module-urlparse
 * https://docs.python.org/2/library/urlparse.html#urlparse.urljoin
