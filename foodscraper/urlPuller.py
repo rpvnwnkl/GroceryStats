@@ -5,15 +5,16 @@ from HTMLParser import HTMLParser
 from htmlentitydefs import name2codepoint
 from bs4 import BeautifulSoup
 from bs4.diagnose import diagnose
-##tmpSite = urllib.urlretrieve('http://www.hannaford.com/catalog/browse_products.cmd', 'test')
-##tmpSite1 = urllib.urlretrieve('http://www.hannaford.com/thumbnail/Produce/Dressings-Dips-Juice/pc/28546/46810.uts?displayAll=true', 'test1')
 
-##page1Read = urllib.urlopen('http://hannaford.com/catalog/browse_product.cmd').read()
-##tmpInfo = urlparse.urlparse('http://www.hannaford.com/catalog/browse_products.cmd')
-##tmpInfo1 = urlparse.urlparse('http://www.hannaford.com/thumbnail/Produce/Dressings-Dips-Juice/pc/28546/46810.uts?displayAll=true')
-##tmpInfo2 = urlparse.urlparse('http://www.hannaford.com/product/Chiquita-Banana-Bread-Mix/869835.uts?refineByCategoryId=46810')
+tmpSite = urllib.urlretrieve('http://www.hannaford.com/catalog/browse_products.cmd', 'test')
+tmpSite1 = urllib.urlretrieve('http://www.hannaford.com/thumbnail/Produce/Dressings-Dips-Juice/pc/28546/46810.uts?displayAll=true', 'test1')
 
-##print tmpInfo, tmpInfo1, tmpInfo2
+page1Read = urllib.urlopen('http://hannaford.com/catalog/browse_product.cmd').read()
+tmpInfo = urlparse.urlparse('http://www.hannaford.com/catalog/browse_products.cmd')
+tmpInfo1 = urlparse.urlparse('http://www.hannaford.com/thumbnail/Produce/Dressings-Dips-Juice/pc/28546/46810.uts?displayAll=true')
+tmpInfo2 = urlparse.urlparse('http://www.hannaford.com/product/Chiquita-Banana-Bread-Mix/869835.uts?refineByCategoryId=46810')
+
+print tmpInfo, tmpInfo1, tmpInfo2
 
 ##Html Parser
 
@@ -41,34 +42,12 @@ class MyHTMLParser(HTMLParser):
 		print 'Decl     : ', data
 
 parser = MyHTMLParser()
-##this url object is not correct. It is reading as an object, needs to be reading as string -->
 ##tmpHtml = urllib.urlretrieve('http://www.hannaford.com/catalog/browse_products.cmd')##<--needs to be string?
 
-##print page1Read 
-##parser.feed(page1Read)
+print page1Read 
+parser.feed(page1Read)
 
 ##page1File = open('page1File', 'w')
 ##page1File.write(page1Read)
 ##page1File.close()
 
-soupFile = open('page1File', 'r+').read()
-soup = BeautifulSoup(soupFile)
-##print(soup.prettify())
-title_tag = soup.head.title
-print title_tag
-body_tag = soup.body
-print body_tag
-subNav_tag = soup.find_all('ul')
-print len(subNav_tag)
-print subNav_tag
-
-
-print soup.find('subnav')
-def has_id_subNav(tag):
-	'''
-	takes in tag and returns true if 'subNav' is in tag
-	'''
-	return 'subnav' in tag
-
-print soup.find_all(has_id_subNav)
-print soup.get_text()
