@@ -10,3 +10,4 @@ assembler.pyc
 .gitignore~
 *.py~
 *.md~
+./foodscraper/test*
