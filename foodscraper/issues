@@ -1,0 +1,3 @@
+1. beautiful soup object seems to have problems finding tags 'subnav', I'm thinking it's because of the javascript/etc in the file. Printing out get_text() gives the wrong text so the parsing is having errors somewhere
+
+

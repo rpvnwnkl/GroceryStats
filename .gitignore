@@ -5,4 +5,13 @@ foodList_1.xml
 sheet1.ods
 sheet2.ods
 sheet3.ods
+<<<<<<< HEAD
 *.pyc
+=======
+assembler.pyc
+*.swp
+.gitignore~
+*.py~
+*.md~
+./foodscraper/test*
+>>>>>>> 2360debcf42ba170a520d76a57dd2ec2082312f0
