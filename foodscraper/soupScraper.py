@@ -5,38 +5,68 @@ import urllib
 import urlparse
 from bs4 import BeautifulSoup
 from bs4.diagnose import diagnose
+import copy
+
+def printsoup(soupObj):
+	if type(soupObj) == type(soup.a) or type(soupObj) == type(BeautifulSoup()):
+  		print 'Soup Length: ', len(soupObj)
+		print 'Number of Soup children: ', len(list(soupObj.children))
+		for xy in soupObj.children:
+			try:
+				print xy.name
+				print xy.string
+			except:
+				if xy in ['\n']:
+					pass
+				else:
+					print 'printing string: ', xy.string
+		print 'Number of Soup Descendants: ', len(list(soupObj.descendants))
+		print 'Attributes are: ', soupObj.attrs
+	else:
+		print 'Not soup Object'
+		print 'Type is ', type(soupObj), 'not ', type(soup.a), ' or ', type(BeautifulSoup())
+	return
 
 url = 'http://www.hannaford.com/catalog/browse_products.cmd'
 soupFile = urllib.urlopen(url, 'r+')
 soup = BeautifulSoup(soupFile)
-##print(soup.prettify())
+printsoup(soup)
 
-title_tag = soup.head.title
-print title_tag
+soupcopy = copy.copy(soup)
 
-##This seems to work, but need to look at actual results to determine difference between techniques
-subNav_tag = soup.find_all(id = re.compile('subNav'))
-##print subNav_tag
-print len(subNav_tag)
-##current length is 151
+subNav_tag = soup.find_all(id = re.compile('subNav')) ##this finds all tags under subNav ids
+
+for item in soup(class_='innerWrap'): ##Only works with one innerWrap div on page
+	newSoup = item.extract() ##This pulls out the innerWrap object and renames it 
+
+for item in newSoup.children:
+	if type(item) == type(BeautifulSoup('<!-- -->').string): ##this finds tags which are comments
+		item.extract() ##this gets rid of them
+	else:
+		pass
 subNode_tree = {}
 for tag in subNav_tag:
      tmpId = tag.get('id')
-##     print tmpId
      tmpId = tmpId.split('-')
-##     print tmpId
      subNode_tree[tag] = [child for child in tag.children if child not in ['\n']]
 
-print subNode_tree[subNav_tag[0]]
+##print subNode_tree[subNav_tag[0]]
+
 total = 0
 for x in subNode_tree:
         total += len(x.a)
-        print x.a
-        print x.get('id')
+       ## print x.a
+       ## print x.get('id')
         for y in x.children:
-                print y.string
+		if y != '\n':
+			pass##	print y.string
+
 print total
-print subNode_tree.keys()
+
+printsoup(newSoup)
+printsoup(soup)
+printsoup(soupcopy)
+
 ##for x in subNode_tree:
 ##        print type(x)
 ##        for tag in x.children:
