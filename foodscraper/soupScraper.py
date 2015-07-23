@@ -15,11 +15,40 @@ title_tag = soup.head.title
 print title_tag
 
 ##This seems to work, but need to look at actual results to determine difference between techniques
-subNav_tag = soup.find_all(id = re.compile('subNav').search('id'))
-print subNav_tag
+subNav_tag = soup.find_all(id = re.compile('subNav'))
+##print subNav_tag
 print len(subNav_tag)
-##current length is 1522
+##current length is 151
+subNode_tree = {}
+for tag in subNav_tag:
+     tmpId = tag.get('id')
+##     print tmpId
+     tmpId = tmpId.split('-')
+##     print tmpId
+     subNode_tree[tag] = [child for child in tag.children if child not in ['\n']]
 
+print subNode_tree[subNav_tag[0]]
+total = 0
+for x in subNode_tree:
+        total += len(x.a)
+        print x.a
+        print x.get('id')
+        for y in x.children:
+                print y.string
+print total
+print subNode_tree.keys()
+##for x in subNode_tree:
+##        print type(x)
+##        for tag in x.children:
+##                print x
+print 'see'
+i = 0
+for tag in soup.select('ul li'):
+        if tag.get('id')==re.compile('subnode'):
+                print tag
+                print'\n'
+                i += 1
+print i
 ##This function is a filter to search for id attribute with subNav
 ##Not quite sure how the return statement works right now, but it does
 def has_id_subNav(idattr):
@@ -29,13 +58,23 @@ def has_id_subNav(idattr):
 	return idattr and re.compile('subNav').search(idattr)
 ##This creates a list of the tags with subNav id attributes
 subNavId = soup.find_all(id=has_id_subNav)
-print subNavId
+##print subNavId
 print 'subNavId Length: '+str(len(subNavId))+' tags'
 print 'subNav_tag Length: '+str(len(subNav_tag))+' tags'
 print 'needs further analysis'
 
 ##length currently 152
+##now it's 151
 
+##for tag in subNav_tag.descendants:
+##	if tag.get('li'):
+##		print tag.get('a')
+
+##for parent in soup.a.parents:
+##	if parent is None:
+##		print parent
+##	else:
+##		print parent.name
 ##[x.decompose() for x in soup('script')]
 ##[x.decompose() for x in soup('style')]
 ##print soup.get_text()
