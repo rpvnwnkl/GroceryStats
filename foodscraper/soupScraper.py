@@ -64,7 +64,7 @@ soup = BeautifulSoup(soupFile)
 soupcopy = copy.copy(soup)
 
 for item in soup(class_='innerWrap'): ##Only works with one innerWrap div on page
-	innerWrap = item.extract() ##This pulls out the innerWrap object and renames it i
+	innerWrap = item.extract() ##This pulls out the innerWrap object and renames it, unfortunately is saved as list?
         print type(innerWrap)
 
 for item in innerWrap.children:
